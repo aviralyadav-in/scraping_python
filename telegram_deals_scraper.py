@@ -1,34 +1,32 @@
-from database import save_deal, save_log
+from database import save_deal, save_log, deal_exists
+
 from telethon import TelegramClient
 from telethon.errors import FloodWaitError
+
 import asyncio
 import re
 import os
 import json
 import requests
 import random
+import threading
 
 from datetime import datetime
 
 
-# HTTP headers used while validating product links
-
 USER_AGENTS = [
-
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138.0 Safari/537.36",
-
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:141.0) Gecko/20100101 Firefox/141.0",
-
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/18.0 Safari/605.1.15",
-
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/137.0 Safari/537.36"
-
 ]
 
 
-# Load project configuration
-
-with open("config.json", "r", encoding="utf-8") as file:
+with open(
+    "config.json",
+    "r",
+    encoding="utf-8"
+) as file:
 
     config = json.load(file)
 
@@ -42,61 +40,77 @@ output_file = config["output_file"]
 log_file = config["log_file"]
 
 
-# Save execution logs
-
 def write_log(status, message):
 
     log_entry = {
-        "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "time": datetime.now().strftime(
+            "%Y-%m-%d %H:%M:%S"
+        ),
         "status": status,
         "message": message
     }
 
-
     if os.path.exists(log_file):
 
-        with open(
-            log_file,
-            "r",
-            encoding="utf-8"
-        ) as file:
+        try:
 
-            try:
+            with open(
+                log_file,
+                "r",
+                encoding="utf-8"
+            ) as file:
 
                 logs = json.load(file)
 
-            except json.JSONDecodeError:
+        except (
+            json.JSONDecodeError,
+            FileNotFoundError
+        ):
 
-                logs = []
+            logs = []
 
     else:
 
         logs = []
 
-
     logs.append(log_entry)
 
-    save_log(
-        status,
-        message
-    )
+    try:
 
-
-    with open(
-        log_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            logs,
-            file,
-            indent=4,
-            ensure_ascii=False
+        save_log(
+            status,
+            message
         )
 
+    except Exception as e:
 
-# Extract product link
+        print(
+            "DATABASE LOG ERROR:",
+            str(e)
+        )
+
+    try:
+
+        with open(
+            log_file,
+            "w",
+            encoding="utf-8"
+        ) as file:
+
+            json.dump(
+                logs,
+                file,
+                indent=4,
+                ensure_ascii=False
+            )
+
+    except Exception as e:
+
+        print(
+            "JSON LOG ERROR:",
+            str(e)
+        )
+
 
 def extract_link(message):
 
@@ -114,7 +128,6 @@ def extract_link(message):
 
                     return button.url
 
-
     if message.text:
 
         links = re.findall(
@@ -126,11 +139,8 @@ def extract_link(message):
 
             return links[0]
 
-
     return "No Link Found"
 
-
-# Validate the extracted product link using a User-Agent
 
 def validate_product_link(url):
 
@@ -138,21 +148,18 @@ def validate_product_link(url):
 
         return
 
-
     try:
 
-        # Display the User-Agent being used
-
         headers = {
-            "User-Agent": random.choice(USER_AGENTS)
+            "User-Agent": random.choice(
+                USER_AGENTS
+            )
         }
-
 
         print(
             "Using User-Agent:",
             headers["User-Agent"]
         )
-
 
         response = requests.get(
             url,
@@ -161,12 +168,10 @@ def validate_product_link(url):
             allow_redirects=True
         )
 
-
         print(
             "Status Code:",
             response.status_code
         )
-
 
         write_log(
             "SUCCESS",
@@ -174,8 +179,12 @@ def validate_product_link(url):
             f"Status Code: {response.status_code}"
         )
 
-
     except Exception as e:
+
+        print(
+            "LINK VALIDATION ERROR:",
+            str(e)
+        )
 
         write_log(
             "WARNING",
@@ -183,72 +192,50 @@ def validate_product_link(url):
         )
 
 
-# Main scraping function
-
-async def main(client, channel_name, message_limit):
+async def main(
+    client,
+    channel_name,
+    limit,
+    stop_event
+):
 
     os.makedirs(
         image_folder,
         exist_ok=True
     )
 
+    messages_scraped = 0
+    messages_saved = 0
+    current_deal = None
+    count = 0
 
-    # Load previous scraped data
-
-    if os.path.exists(output_file):
-
-        with open(
-            output_file,
-            "r",
-            encoding="utf-8"
-        ) as file:
-
-            try:
-
-                deals = json.load(file)
-
-            except json.JSONDecodeError:
-
-                deals = []
-
-    else:
-
-        deals = []
-
-
-    # Store existing message IDs
-
-    processed_ids = {
-        deal["message_id"]
-        for deal in deals
-    }
-
+    print()
+    print("=" * 60)
+    print(
+        f"SCRAPING CHANNEL: {channel_name}"
+    )
+    print(
+        f"SCRAPING LIMIT: {limit}"
+    )
+    print("=" * 60)
 
     try:
-
-        print(
-            f"\nScraping Channel: {channel_name}"
-        )
-
 
         channel = await client.get_entity(
             channel_name
         )
 
-
         print(
             "Connected Successfully"
         )
 
-
         print(
-            "Channel ID :",
+            "Channel ID:",
             channel.id
         )
 
-
         print(
-            "Channel Title :",
+            "Channel Title:",
             getattr(
                 channel,
                 "title",
@@ -256,70 +243,95 @@ async def main(client, channel_name, message_limit):
             )
         )
 
-
         write_log(
             "SUCCESS",
             f"Connected to {channel_name}"
         )
 
-
         print(
             "Fetching messages..."
         )
 
-
-        count = 0
-        messages_scraped = 0
-        messages_saved = 0
-
-
         async for message in client.iter_messages(
             channel,
-            limit=message_limit
+            limit=int(limit)
         ):
+
+            if stop_event.is_set():
+
+                print(
+                    "STOP REQUEST DETECTED"
+                )
+
+                break
 
             count += 1
 
-
+            print()
             print(
                 f"Reading Message {count}"
             )
-            print("Has photo:", bool(message.photo))
-            print("Media type:", type(message.media))
 
+            print(
+                "Message ID:",
+                message.id
+            )
 
-            # Skip duplicate messages
+            print(
+                "Has photo:",
+                bool(message.photo)
+            )
 
-            if message.id in processed_ids:
+            if deal_exists(
+                message.id,
+                channel_name
+            ):
 
                 print(
-                    f"Skipping Duplicate : {message.id}"
+                    f"Skipping Duplicate in PostgreSQL: {message.id}"
                 )
 
                 continue
-
-
-            # Extract and validate product link
-
-            item_link = extract_link(
-                message
-            )
-
-            validate_product_link(
-                item_link
-            )
-
-
-            # Skip empty messages
 
             if not (
                 message.text
                 or message.photo
             ):
 
+                print(
+                    "Skipping empty message"
+                )
+
                 continue
 
-            messages_scraped += 1
+            if stop_event.is_set():
+
+                print(
+                    "STOP REQUEST DETECTED"
+                )
+
+                break
+
+            item_link = extract_link(
+                message
+            )
+
+            print(
+                "Product Link:",
+                item_link
+            )
+
+            validate_product_link(
+                item_link
+            )
+
+            if stop_event.is_set():
+
+                print(
+                    "STOP REQUEST DETECTED"
+                )
+
+                break
 
             content = (
                 message.text
@@ -327,11 +339,7 @@ async def main(client, channel_name, message_limit):
                 else ""
             )
 
-
             image_path = ""
-
-
-            # UPDATED IMAGE DOWNLOAD SECTION ONLY
 
             if message.photo:
 
@@ -339,36 +347,22 @@ async def main(client, channel_name, message_limit):
                     f"{channel_name}_{message.id}.jpg"
                 )
 
-
                 image_file = os.path.join(
                     image_folder,
                     image_name
                 )
 
-
                 print(
                     "Downloading image..."
                 )
 
-
-                print(
-                    "Image path:",
-                    image_file
-                )
-
-
                 try:
 
-                    downloaded_path = await message.download_media(
-                        file=image_file
+                    downloaded_path = (
+                        await message.download_media(
+                            file=image_file
+                        )
                     )
-
-
-                    print(
-                        "Downloaded path returned:",
-                        downloaded_path
-                    )
-
 
                     if (
                         downloaded_path
@@ -377,25 +371,12 @@ async def main(client, channel_name, message_limit):
                         )
                     ):
 
-                        file_size = os.path.getsize(
-                            downloaded_path
-                        )
-
-
-                        print(
-                            "Image downloaded successfully"
-                        )
-
-
-                        print(
-                            "File size:",
-                            file_size,
-                            "bytes"
-                        )
-
-
                         image_path = downloaded_path
 
+                        print(
+                            "Image downloaded successfully:",
+                            downloaded_path
+                        )
 
                         write_log(
                             "SUCCESS",
@@ -404,16 +385,11 @@ async def main(client, channel_name, message_limit):
                             f"{downloaded_path}"
                         )
 
-
                     else:
-
-                        image_path = ""
-
 
                         print(
                             "Image download failed"
                         )
-
 
                         write_log(
                             "ERROR",
@@ -421,17 +397,14 @@ async def main(client, channel_name, message_limit):
                             f"Message ID {message.id}"
                         )
 
-
                 except Exception as e:
 
                     image_path = ""
-
 
                     print(
                         "IMAGE DOWNLOAD ERROR:",
                         str(e)
                     )
-
 
                     write_log(
                         "ERROR",
@@ -440,202 +413,257 @@ async def main(client, channel_name, message_limit):
                         f"{str(e)}"
                     )
 
-
-
-            # END OF UPDATED IMAGE DOWNLOAD SECTION
-
             deal = {
-
                 "message_id": message.id,
-
-                "date": str(
-                    message.date
-                ),
-
+                "date": str(message.date),
                 "content": content,
-
                 "product_link": item_link,
-
                 "image_path": image_path,
-
                 "channel": channel_name
-
             }
 
-
-            deals.append(
-                deal
+            current_deal = (
+                f"Message ID {message.id}"
             )
 
-
-            save_deal(
-                deal
+            print(
+                "Saving deal to PostgreSQL..."
             )
+
+            try:
+
+                saved = save_deal(
+                    deal
+                )
+
+                if saved is False:
+
+                    print(
+                        f"Deal already exists in PostgreSQL: {message.id}"
+                    )
+
+                    write_log(
+                        "INFO",
+                        f"Deal already exists for "
+                        f"Message ID {message.id}"
+                    )
+
+                    continue
+
+                print(
+                    "Deal saved to PostgreSQL"
+                )
+
+            except Exception as e:
+
+                print(
+                    "DATABASE SAVE ERROR:",
+                    str(e)
+                )
+
+                write_log(
+                    "ERROR",
+                    f"Database save failed for "
+                    f"Message ID {message.id}: "
+                    f"{str(e)}"
+                )
+
+                continue
+
+            messages_scraped += 1
             messages_saved += 1
-
-            processed_ids.add(
-                message.id
-            )
-
 
             write_log(
                 "SUCCESS",
                 f"Scraped Message ID {message.id}"
             )
 
-
             print(
-                "-" * 40
+                "-" * 50
             )
-
 
             print(
                 "Message ID:",
                 message.id
             )
 
-
             print(
                 "Date:",
                 message.date
             )
-
 
             print(
                 "Content:",
                 content
             )
 
-
             print(
                 "Product Link:",
                 item_link
             )
-
 
             print(
                 "Image Path:",
                 image_path
             )
 
-
             print(
-                "-" * 40
+                "Messages Scraped:",
+                messages_scraped
             )
 
+            print(
+                "Messages Saved:",
+                messages_saved
+            )
 
+            print(
+                "-" * 50
+            )
+
+        print()
         print(
-            "Messages Read :",
+            "Messages Read:",
             count
         )
 
-
     except FloodWaitError as e:
+
+        print(
+            f"Flood wait for {e.seconds} seconds"
+        )
 
         write_log(
             "WARNING",
             f"Flood wait for {e.seconds} seconds"
         )
 
-
-        print(
-            f"Waiting {e.seconds} seconds..."
-        )
-
-
         await asyncio.sleep(
             e.seconds
         )
 
-
     except Exception as e:
 
         print(
-            "CHANNEL ERROR :",
-            e
+            "CHANNEL ERROR:",
+            str(e)
         )
-
 
         write_log(
             "ERROR",
             f"{channel_name}: {str(e)}"
         )
+
         raise
 
+    try:
 
-    # Save scraped data
+        from database import get_deals
 
-    with open(
-        output_file,
-        "w",
-        encoding="utf-8"
-    ) as file:
-
-        json.dump(
-            deals,
-            file,
-            indent=4,
-            ensure_ascii=False
+        all_deals = get_deals(
+            channel=channel_name,
+            page=1,
+            limit=10000
         )
 
+        with open(
+            output_file,
+            "w",
+            encoding="utf-8"
+        ) as file:
 
+            json.dump(
+                all_deals,
+                file,
+                indent=4,
+                ensure_ascii=False
+            )
+
+        print()
+        print(
+            f"Data exported from PostgreSQL to {output_file}"
+        )
+
+    except Exception as e:
+
+        print(
+            "JSON EXPORT ERROR:",
+            str(e)
+        )
+
+        write_log(
+            "ERROR",
+            f"Could not export PostgreSQL data to JSON: {str(e)}"
+        )
+
+    if stop_event.is_set():
+
+        write_log(
+            "STOPPED",
+            f"Scraping stopped for {channel_name}. "
+            f"Messages scraped: {messages_scraped}, "
+            f"Messages saved: {messages_saved}"
+        )
+
+    else:
+
+        write_log(
+            "SUCCESS",
+            f"Scraping completed for {channel_name}. "
+            f"Messages scraped: {messages_scraped}, "
+            f"Messages saved: {messages_saved}"
+        )
+
+    print()
+    print("=" * 60)
+    print("SCRAPING RESULT")
     print(
-        f"\nData saved successfully in {output_file}"
+        "Messages Scraped:",
+        messages_scraped
     )
-
-
     print(
-        "Total Deals Saved :",
-        len(deals)
+        "Messages Saved:",
+        messages_saved
     )
-
-
-    write_log(
-        "SUCCESS",
-        f"{output_file} updated successfully"
+    print(
+        "Current Deal:",
+        current_deal
     )
+    print("=" * 60)
 
     return {
-    "messages_scraped": messages_scraped,
-    "messages_saved": messages_saved
-    } 
+        "messages_scraped": messages_scraped,
+        "messages_saved": messages_saved,
+        "current_deal": current_deal
+    }
 
 
-def start_scraper(channel_name, limit):
+def start_scraper(
+    channel_name,
+    limit,
+    stop_event
+):
 
+    channel_name = channel_name.strip().lower()
+
+    print()
+    print("=" * 60)
+    print("INSIDE START_SCRAPER")
     print(
-        "=" * 50
-    )
-
-
-    print(
-        "Inside start_scraper"
-    )
-
-
-    print(
-        "Channel :",
+        "Channel:",
         channel_name
     )
-
-
     print(
-        "Limit :",
+        "Limit:",
         limit
     )
-
-
-    print(
-        "=" * 50
-    )
-
+    print("=" * 60)
 
     client = TelegramClient(
         "session",
         api_id,
         api_hash
     )
-
 
     try:
 
@@ -645,29 +673,39 @@ def start_scraper(channel_name, limit):
                 main(
                     client,
                     channel_name,
-                    int(limit)
+                    int(limit),
+                    stop_event
                 )
             )
+
+            print(
+                "START_SCRAPER RESULT:",
+                result
+            )
+
             return result
 
     except Exception as e:
 
         print(
-            "SCRAPER ERROR :",
-            e
+            "SCRAPER ERROR:",
+            str(e)
         )
-
 
         write_log(
             "ERROR",
             str(e)
         )
-        
+
         raise
-    
+
+
 if __name__ == "__main__":
+
+    stop_event = threading.Event()
 
     start_scraper(
         channels[0],
-        message_limit
+        message_limit,
+        stop_event
     )
