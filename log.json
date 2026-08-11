@@ -1,57 +1,5417 @@
 [
     {
-        "time": "2026-08-04 18:07:26",
+        "time": "2026-08-06 16:37:17",
         "status": "SUCCESS",
         "message": "Connected to amazinglootsdealsoffers"
     },
     {
-        "time": "2026-08-04 18:07:26",
+        "time": "2026-08-06 16:37:17",
+        "status": "ERROR",
+        "message": "amazinglootsdealsoffers: cannot access local variable 'count' where it is not associated with a value"
+    },
+    {
+        "time": "2026-08-06 16:37:17",
         "status": "SUCCESS",
         "message": "deals.json updated successfully"
     },
     {
-        "time": "2026-08-04 18:26:19",
+        "time": "2026-08-06 16:38:18",
         "status": "SUCCESS",
         "message": "Connected to amazinglootsdealsoffers"
     },
     {
-        "time": "2026-08-04 18:26:19",
+        "time": "2026-08-06 16:38:20",
         "status": "SUCCESS",
-        "message": "deals.json updated successfully"
+        "message": "Validated Product Link: https://myntr.in/fTinoV | Status Code: 200"
     },
     {
-        "time": "2026-08-04 18:29:06",
+        "time": "2026-08-06 16:38:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78030"
+    },
+    {
+        "time": "2026-08-06 16:38:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07DPRHCH5?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:23",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78029"
+    },
+    {
+        "time": "2026-08-06 16:38:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/tmNak9 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:24",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78028"
+    },
+    {
+        "time": "2026-08-06 16:38:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/MU7mmv | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78027"
+    },
+    {
+        "time": "2026-08-06 16:38:27",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.it/2QBjw6y | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:49",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78026"
+    },
+    {
+        "time": "2026-08-06 16:38:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78026"
+    },
+    {
+        "time": "2026-08-06 16:38:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bitli.in/Qg0NYeU | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:55",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78025"
+    },
+    {
+        "time": "2026-08-06 16:38:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78025"
+    },
+    {
+        "time": "2026-08-06 16:38:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F5X5897W?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:38:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78024"
+    },
+    {
+        "time": "2026-08-06 16:39:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ajiio.co/xeftVw | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:39:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78023"
+    },
+    {
+        "time": "2026-08-06 16:39:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03UDbLaC | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:39:03",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78022"
+    },
+    {
+        "time": "2026-08-06 16:39:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B098NXJ8YV?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:39:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78021"
+    },
+    {
+        "time": "2026-08-06 16:39:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C7MHX11L?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:39:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78020"
+    },
+    {
+        "time": "2026-08-06 16:45:48",
         "status": "SUCCESS",
         "message": "Connected to amazinglootsdealsoffers"
     },
     {
-        "time": "2026-08-04 18:29:06",
+        "time": "2026-08-06 16:45:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/fTinoV | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:45:50",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78030"
+    },
+    {
+        "time": "2026-08-06 16:45:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07DPRHCH5?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:45:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78029"
+    },
+    {
+        "time": "2026-08-06 16:45:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/tmNak9 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:45:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78028"
+    },
+    {
+        "time": "2026-08-06 16:45:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/MU7mmv | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:45:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78027"
+    },
+    {
+        "time": "2026-08-06 16:45:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.it/2QBjw6y | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:14",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78026"
+    },
+    {
+        "time": "2026-08-06 16:46:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78026"
+    },
+    {
+        "time": "2026-08-06 16:46:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bitli.in/Qg0NYeU | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:21",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78025"
+    },
+    {
+        "time": "2026-08-06 16:46:21",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78025"
+    },
+    {
+        "time": "2026-08-06 16:46:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F5X5897W?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:23",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78024"
+    },
+    {
+        "time": "2026-08-06 16:46:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ajiio.co/xeftVw | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:46:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78023"
+    },
+    {
+        "time": "2026-08-06 16:46:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03UDbLaC | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78022"
+    },
+    {
+        "time": "2026-08-06 16:46:30",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B098NXJ8YV?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:30",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78021"
+    },
+    {
+        "time": "2026-08-06 16:46:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C7MHX11L?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78020"
+    },
+    {
+        "time": "2026-08-06 16:46:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bilty.co/cKiZBq | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:37",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78019"
+    },
+    {
+        "time": "2026-08-06 16:46:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78019"
+    },
+    {
+        "time": "2026-08-06 16:46:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.cc/hTXfx4o | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:46:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78018"
+    },
+    {
+        "time": "2026-08-06 16:46:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bilty.co/NJbA4T | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:42",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78017"
+    },
+    {
+        "time": "2026-08-06 16:46:42",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78017"
+    },
+    {
+        "time": "2026-08-06 16:46:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B07eO8WQ1 | Status Code: 202"
+    },
+    {
+        "time": "2026-08-06 16:46:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78016"
+    },
+    {
+        "time": "2026-08-06 16:46:46",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GW37C2WW?psc=1&th=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:46",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78015"
+    },
+    {
+        "time": "2026-08-06 16:46:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DNTLYK6Z?psc=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78014"
+    },
+    {
+        "time": "2026-08-06 16:46:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bilty.co/3aKnRU | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:53",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78013"
+    },
+    {
+        "time": "2026-08-06 16:46:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78013"
+    },
+    {
+        "time": "2026-08-06 16:46:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0ghozylO | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:46:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78012"
+    },
+    {
+        "time": "2026-08-06 16:47:01",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0dhC6VNI | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78011"
+    },
+    {
+        "time": "2026-08-06 16:47:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FH23CTP5?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:02",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78010"
+    },
+    {
+        "time": "2026-08-06 16:47:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DFWNBCX4?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78009"
+    },
+    {
+        "time": "2026-08-06 16:47:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0B51PL5TH?psc=1&th=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78008"
+    },
+    {
+        "time": "2026-08-06 16:47:09",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/QvNvuJ | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78007"
+    },
+    {
+        "time": "2026-08-06 16:47:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/EElATb | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:11",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78006"
+    },
+    {
+        "time": "2026-08-06 16:47:11",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78006"
+    },
+    {
+        "time": "2026-08-06 16:47:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FBGTHHBS?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:12",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78005"
+    },
+    {
+        "time": "2026-08-06 16:47:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DM1B36PM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:15",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78004"
+    },
+    {
+        "time": "2026-08-06 16:47:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/pL28ZK | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:19",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78003"
+    },
+    {
+        "time": "2026-08-06 16:47:20",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B091CW1KQG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78002"
+    },
+    {
+        "time": "2026-08-06 16:47:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BTMCB9WD?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:23",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78001"
+    },
+    {
+        "time": "2026-08-06 16:47:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B079NP5FTZ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78000"
+    },
+    {
+        "time": "2026-08-06 16:47:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B00NQ2KEAA?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77999"
+    },
+    {
+        "time": "2026-08-06 16:47:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09DD4WD7W?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77998"
+    },
+    {
+        "time": "2026-08-06 16:47:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08CWMN7NF?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77997"
+    },
+    {
+        "time": "2026-08-06 16:47:36",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07169JPVR?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77996"
+    },
+    {
+        "time": "2026-08-06 16:47:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H9FGWK66?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77995"
+    },
+    {
+        "time": "2026-08-06 16:47:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09263SP48?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:41",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77994"
+    },
+    {
+        "time": "2026-08-06 16:47:44",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CP3Y51V4?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77993"
+    },
+    {
+        "time": "2026-08-06 16:47:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0D7ZX8YK2?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:47",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77992"
+    },
+    {
+        "time": "2026-08-06 16:47:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?k=porpoise%20tamper%20proof&rh=p_n_pct-off-with-tax%3A27060457031%2Cp_6%3AAJ6SIZC8YQDZX&ds=v1%3AVZuQbIW4t%2018giBImLRleKmcuEa5yAGTKEVqjFJ%2FrvE&crid=WJNUZ4BBORSX&qid=1785961297&sprefix=porpoise%20tamper%20proof%2Caps%2C278&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:47:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 77991"
+    },
+    {
+        "time": "2026-08-06 16:47:49",
         "status": "SUCCESS",
         "message": "deals.json updated successfully"
     },
     {
-        "time": "2026-08-04 18:32:39",
+        "time": "2026-08-06 16:49:24",
         "status": "SUCCESS",
         "message": "Connected to amazinglootsdealsoffers"
     },
     {
-        "time": "2026-08-04 18:32:39",
+        "time": "2026-08-06 16:49:26",
         "status": "SUCCESS",
         "message": "deals.json updated successfully"
     },
     {
-        "time": "2026-08-04 18:37:24",
+        "time": "2026-08-06 16:53:08",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_Ajio_Sale_Deals_offers_li"
+    },
+    {
+        "time": "2026-08-06 16:53:10",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07BH43TX8?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7123"
+    },
+    {
+        "time": "2026-08-06 16:53:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09V35XFTM?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7122"
+    },
+    {
+        "time": "2026-08-06 16:53:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/JCJjry | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:53:18",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 7121"
+    },
+    {
+        "time": "2026-08-06 16:53:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7121"
+    },
+    {
+        "time": "2026-08-06 16:53:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FFT6GG2B?psc=1&smid=A1WYWER0W24N8S&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:21",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7120"
+    },
+    {
+        "time": "2026-08-06 16:53:22",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F4FTDNJM?psc=1&smid=A1WYWER0W24N8S&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7119"
+    },
+    {
+        "time": "2026-08-06 16:53:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/bcmSgc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:25",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 7118"
+    },
+    {
+        "time": "2026-08-06 16:53:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7118"
+    },
+    {
+        "time": "2026-08-06 16:53:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/uV7QXN | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7117"
+    },
+    {
+        "time": "2026-08-06 16:53:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07DPRHCH5?tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7116"
+    },
+    {
+        "time": "2026-08-06 16:53:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/YQ7XaT | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7115"
+    },
+    {
+        "time": "2026-08-06 16:53:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/u3nG9R | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7114"
+    },
+    {
+        "time": "2026-08-06 16:53:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/qz1Xj3 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7113"
+    },
+    {
+        "time": "2026-08-06 16:53:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F5X5897W?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:35",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7112"
+    },
+    {
+        "time": "2026-08-06 16:53:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ajiio.co/DxhkaS | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:53:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7111"
+    },
+    {
+        "time": "2026-08-06 16:53:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/events/greatfreedomsale?btn_type=ss&btn_ref=srctok-0d5b330874391ae0&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7110"
+    },
+    {
+        "time": "2026-08-06 16:53:40",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/BESAt1 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7109"
+    },
+    {
+        "time": "2026-08-06 16:53:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?k=vaseline&rh=n%3A1355016031%2Cn%3A1374407031%2Cn%3A1374408031%2Cp_6%3AA15APWRK6P7LBV%2Cp_123%3A247670%2Cp_n_pct-off-with-tax%3A55-&s=price-asc-rank&i=beauty&btn_ref=srctok-50ce12c43494fe20&btn_type=ss&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:43",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 7108"
+    },
+    {
+        "time": "2026-08-06 16:53:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7108"
+    },
+    {
+        "time": "2026-08-06 16:53:43",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C61RS1Q7?psc=1&th=1&smid=A1WYWER0W24N8S&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7107"
+    },
+    {
+        "time": "2026-08-06 16:53:44",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0B4GWPQYT?psc=1&th=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7106"
+    },
+    {
+        "time": "2026-08-06 16:53:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C7MHS1F9?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7105"
+    },
+    {
+        "time": "2026-08-06 16:53:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B00N0NDEWA?tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:47",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7104"
+    },
+    {
+        "time": "2026-08-06 16:53:49",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FBGTHHBS?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7103"
+    },
+    {
+        "time": "2026-08-06 16:53:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/ZWsjDS | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:50",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7102"
+    },
+    {
+        "time": "2026-08-06 16:53:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DM1B36PM?psc=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:52",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7101"
+    },
+    {
+        "time": "2026-08-06 16:53:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/oXCrlE | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 16:53:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7100"
+    },
+    {
+        "time": "2026-08-06 16:53:54",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B091CW1KQG?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:54",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7099"
+    },
+    {
+        "time": "2026-08-06 16:53:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BTMCB9WD?psc=1&th=1&smid=AXOGFIT0PZZ7G&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 16:53:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7098"
+    },
+    {
+        "time": "2026-08-06 16:53:57",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 17:16:51",
         "status": "SUCCESS",
         "message": "Connected to amazinglootsdealsoffers"
     },
     {
-        "time": "2026-08-04 18:37:24",
+        "time": "2026-08-06 17:16:54",
         "status": "SUCCESS",
-        "message": "Scraped Message ID 77844"
+        "message": "Validated Product Link: https://fkrt.co/ScpwVJ | Status Code: 200"
     },
     {
-        "time": "2026-08-04 18:37:24",
+        "time": "2026-08-06 17:16:55",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78041"
+    },
+    {
+        "time": "2026-08-06 17:16:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78041"
+    },
+    {
+        "time": "2026-08-06 17:16:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09NLWX4J1?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:16:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78040"
+    },
+    {
+        "time": "2026-08-06 17:16:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07BH43TX8?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:16:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78039"
+    },
+    {
+        "time": "2026-08-06 17:17:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09V35XFTM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:02",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78038"
+    },
+    {
+        "time": "2026-08-06 17:17:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FFT6GG2B?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78037"
+    },
+    {
+        "time": "2026-08-06 17:17:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0D854LQLS?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78036"
+    },
+    {
+        "time": "2026-08-06 17:17:09",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0G4HRB1XQ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78035"
+    },
+    {
+        "time": "2026-08-06 17:17:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0B6J1GM93?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:12",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78034"
+    },
+    {
+        "time": "2026-08-06 17:17:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BRQS3RPB?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78033"
+    },
+    {
+        "time": "2026-08-06 17:17:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H1MFZS3J?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:15",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78032"
+    },
+    {
+        "time": "2026-08-06 17:17:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F4FTDNJM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:17:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78031"
+    },
+    {
+        "time": "2026-08-06 17:17:17",
         "status": "SUCCESS",
         "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 17:21:24",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffer"
+    },
+    {
+        "time": "2026-08-06 17:21:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/46GxxFm | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:21:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 263"
+    },
+    {
+        "time": "2026-08-06 17:21:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ekaro.in/enkr20231008s37032062 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:21:31",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 262"
+    },
+    {
+        "time": "2026-08-06 17:21:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 262"
+    },
+    {
+        "time": "2026-08-06 17:21:31",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 17:25:24",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_sale_Deals_offers_li"
+    },
+    {
+        "time": "2026-08-06 17:25:27",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09NLWX4J1?psc=1&th=1&smid=A2AL6IVND0I91F&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 17:25:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7124"
+    },
+    {
+        "time": "2026-08-06 17:25:27",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 17:28:06",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 17:28:06",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 17:58:20",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 17:58:20",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 18:08:19",
+        "status": "ERROR",
+        "message": "myntra_ajio_sales_deals_li: No user has \"myntra_ajio_sales_deals_li\" as username"
+    },
+    {
+        "time": "2026-08-06 18:08:19",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 18:11:00",
+        "status": "ERROR",
+        "message": "chorbazaar: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)"
+    },
+    {
+        "time": "2026-08-06 18:11:00",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 18:12:13",
+        "status": "ERROR",
+        "message": "CHORBAZAAR: Nobody is using this username or the username is unacceptable (caused by ResolveUsernameRequest)"
+    },
+    {
+        "time": "2026-08-06 18:12:13",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 18:12:49",
+        "status": "ERROR",
+        "message": "llpackbypiyush: No user has \"llpackbypiyush\" as username"
+    },
+    {
+        "time": "2026-08-06 18:12:49",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 18:13:16",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-06 18:13:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6juns4 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:13:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 903"
+    },
+    {
+        "time": "2026-08-06 18:13:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 903"
+    },
+    {
+        "time": "2026-08-06 18:13:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68frwe | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:13:28",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 902"
+    },
+    {
+        "time": "2026-08-06 18:13:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 902"
+    },
+    {
+        "time": "2026-08-06 18:13:30",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/dgis92d | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:13:33",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 901"
+    },
+    {
+        "time": "2026-08-06 18:13:33",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 901"
+    },
+    {
+        "time": "2026-08-06 18:13:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/79zjdd1 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:13:37",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 900"
+    },
+    {
+        "time": "2026-08-06 18:13:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 900"
+    },
+    {
+        "time": "2026-08-06 18:13:43",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6jaepj | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:13:48",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 899"
+    },
+    {
+        "time": "2026-08-06 18:13:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 899"
+    },
+    {
+        "time": "2026-08-06 18:13:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68z2yy | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:13:55",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 898"
+    },
+    {
+        "time": "2026-08-06 18:13:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 898"
+    },
+    {
+        "time": "2026-08-06 18:13:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nfg8at | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:14:00",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 897"
+    },
+    {
+        "time": "2026-08-06 18:14:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 897"
+    },
+    {
+        "time": "2026-08-06 18:14:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nekawe | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:09",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 896"
+    },
+    {
+        "time": "2026-08-06 18:14:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 896"
+    },
+    {
+        "time": "2026-08-06 18:14:10",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6ra9pr | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:14:11",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 895"
+    },
+    {
+        "time": "2026-08-06 18:14:11",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 895"
+    },
+    {
+        "time": "2026-08-06 18:14:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/60l6w9h | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 894"
+    },
+    {
+        "time": "2026-08-06 18:14:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 894"
+    },
+    {
+        "time": "2026-08-06 18:14:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6c4yyf | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:17",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 893"
+    },
+    {
+        "time": "2026-08-06 18:14:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 893"
+    },
+    {
+        "time": "2026-08-06 18:14:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3d4dj | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:14:19",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 892"
+    },
+    {
+        "time": "2026-08-06 18:14:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 892"
+    },
+    {
+        "time": "2026-08-06 18:14:22",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 891"
+    },
+    {
+        "time": "2026-08-06 18:14:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 891"
+    },
+    {
+        "time": "2026-08-06 18:14:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/64kar2 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:26",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 880"
+    },
+    {
+        "time": "2026-08-06 18:14:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 880"
+    },
+    {
+        "time": "2026-08-06 18:14:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mvmfj | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:30",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 879"
+    },
+    {
+        "time": "2026-08-06 18:14:30",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 879"
+    },
+    {
+        "time": "2026-08-06 18:14:33",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/667hyr | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:34",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 878"
+    },
+    {
+        "time": "2026-08-06 18:14:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 878"
+    },
+    {
+        "time": "2026-08-06 18:14:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3tn6u | Status Code: 403"
+    },
+    {
+        "time": "2026-08-06 18:14:36",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 877"
+    },
+    {
+        "time": "2026-08-06 18:14:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 877"
+    },
+    {
+        "time": "2026-08-06 18:14:40",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n36n24 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:45",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 876"
+    },
+    {
+        "time": "2026-08-06 18:14:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 876"
+    },
+    {
+        "time": "2026-08-06 18:14:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n36n24 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:53",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 875"
+    },
+    {
+        "time": "2026-08-06 18:14:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 875"
+    },
+    {
+        "time": "2026-08-06 18:14:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/nzueczp | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 18:14:57",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 874"
+    },
+    {
+        "time": "2026-08-06 18:14:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 874"
+    },
+    {
+        "time": "2026-08-06 18:14:57",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:10:50",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:10:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B09uoQOox | Status Code: 503"
+    },
+    {
+        "time": "2026-08-06 20:10:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78061"
+    },
+    {
+        "time": "2026-08-06 20:10:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bilty.co/XM593a | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:10:57",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78060"
+    },
+    {
+        "time": "2026-08-06 20:10:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78060"
+    },
+    {
+        "time": "2026-08-06 20:11:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H7S6LT9P?th=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:01",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78059"
+    },
+    {
+        "time": "2026-08-06 20:11:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78059"
+    },
+    {
+        "time": "2026-08-06 20:11:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CG96Y3WG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78058"
+    },
+    {
+        "time": "2026-08-06 20:11:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C24F23N4?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78055"
+    },
+    {
+        "time": "2026-08-06 20:11:08",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C2CYLCBG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78054"
+    },
+    {
+        "time": "2026-08-06 20:11:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0fRsf4c9 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78053"
+    },
+    {
+        "time": "2026-08-06 20:11:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bilty.co/rRFN8B | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:16",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78049"
+    },
+    {
+        "time": "2026-08-06 20:11:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C73YCKFN?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78046"
+    },
+    {
+        "time": "2026-08-06 20:11:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BRQS3RPB?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:19",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78044"
+    },
+    {
+        "time": "2026-08-06 20:11:22",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H5CQ6QJ7?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:11:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78042"
+    },
+    {
+        "time": "2026-08-06 20:11:22",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:50:14",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:50:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B01JJoBIa | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78071"
+    },
+    {
+        "time": "2026-08-06 20:50:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CVRSV88R?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:19",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78070"
+    },
+    {
+        "time": "2026-08-06 20:50:22",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DFHCXV5S?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78069"
+    },
+    {
+        "time": "2026-08-06 20:50:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BL6SD82V?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:23",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78068"
+    },
+    {
+        "time": "2026-08-06 20:50:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0D4B3QTCK?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78067"
+    },
+    {
+        "time": "2026-08-06 20:50:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H6G1XTVQ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78066"
+    },
+    {
+        "time": "2026-08-06 20:50:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03a2xZro | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78065"
+    },
+    {
+        "time": "2026-08-06 20:50:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C4YX9RGL?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78064"
+    },
+    {
+        "time": "2026-08-06 20:50:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09VCJ171S?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:35",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78063"
+    },
+    {
+        "time": "2026-08-06 20:50:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/mSSkfo | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 20:50:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78062"
+    },
+    {
+        "time": "2026-08-06 20:50:38",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:51:57",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:51:57",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:52:05",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:52:05",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:54:06",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:54:06",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:55:42",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 20:55:43",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:57:00",
+        "status": "ERROR",
+        "message": "amazinglootsdealsoffers980089986: No user has \"amazinglootsdealsoffers980089986\" as username"
+    },
+    {
+        "time": "2026-08-06 20:57:00",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 20:59:45",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 21:01:51",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffer"
+    },
+    {
+        "time": "2026-08-06 21:01:52",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 21:03:19",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-06 21:03:22",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0B5LLX3PT?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-06 21:03:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78080"
+    },
+    {
+        "time": "2026-08-06 21:03:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B05AdwhaX | Status Code: 503"
+    },
+    {
+        "time": "2026-08-06 21:03:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78079"
+    },
+    {
+        "time": "2026-08-06 21:03:25",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-06 21:04:12",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-07 11:31:56",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-07 11:31:57",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 15:53:22",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 15:53:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://dl.flipkart.com/s/TVZn1CuuuN | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78767"
+    },
+    {
+        "time": "2026-08-09 15:53:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B01P85wyv | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78766"
+    },
+    {
+        "time": "2026-08-09 15:53:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/Lifelong-Massager-Machine-Settings-LLGM109/dp/B0C9DX5RFY/ref=?th=1&btn_type=ss&btn_ref=srctok-6f318a942cf63c30&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78765"
+    },
+    {
+        "time": "2026-08-09 15:53:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://myntr.in/fn9DBL | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78764"
+    },
+    {
+        "time": "2026-08-09 15:53:36",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07QBR69J3?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78763"
+    },
+    {
+        "time": "2026-08-09 15:53:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/GU9LTM | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:53:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78762"
+    },
+    {
+        "time": "2026-08-09 15:53:40",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?k=Aristocrat&rh=n%3A2917450031%2Cp_123%3A484241%2Cp_n_pct-off-with-tax%3A27060457031%2Cp_6%3AA6ULDMYWQBMT0%7CAXOGFIT0PZZ7G&s=price-asc-rank&i=luggage&tag=Rickeykaran77-21& | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78761"
+    },
+    {
+        "time": "2026-08-09 15:53:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GW2JYSDR?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78760"
+    },
+    {
+        "time": "2026-08-09 15:53:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H8S8QYXF?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78759"
+    },
+    {
+        "time": "2026-08-09 15:53:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FNWNZZ1B?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78758"
+    },
+    {
+        "time": "2026-08-09 15:53:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C8HCLQVC?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78757"
+    },
+    {
+        "time": "2026-08-09 15:53:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H62G2T4X?th=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78756"
+    },
+    {
+        "time": "2026-08-09 15:53:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GWN14N9F?th=1&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:53:59",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78755"
+    },
+    {
+        "time": "2026-08-09 15:54:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/q5QcIh | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:54:02",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78754"
+    },
+    {
+        "time": "2026-08-09 15:54:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07S756W2T?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:08",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78753"
+    },
+    {
+        "time": "2026-08-09 15:54:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03nfYhlE | Status Code: 503"
+    },
+    {
+        "time": "2026-08-09 15:54:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78752"
+    },
+    {
+        "time": "2026-08-09 15:54:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07T3GZB3R?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78751"
+    },
+    {
+        "time": "2026-08-09 15:54:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/YE13B3 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:54:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78750"
+    },
+    {
+        "time": "2026-08-09 15:54:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FCS5BSGX?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78749"
+    },
+    {
+        "time": "2026-08-09 15:54:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B094W9Z82F?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78748"
+    },
+    {
+        "time": "2026-08-09 15:54:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03TPfyCS | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78747"
+    },
+    {
+        "time": "2026-08-09 15:54:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FVX7BTJ8?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78746"
+    },
+    {
+        "time": "2026-08-09 15:54:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F9YNDVTY?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:50",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78744"
+    },
+    {
+        "time": "2026-08-09 15:54:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0i3zJp2u | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78743"
+    },
+    {
+        "time": "2026-08-09 15:54:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07MQW396Z?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:54:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78742"
+    },
+    {
+        "time": "2026-08-09 15:55:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B071LTXBT6?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78741"
+    },
+    {
+        "time": "2026-08-09 15:55:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/nesUOZ | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:55:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78740"
+    },
+    {
+        "time": "2026-08-09 15:55:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B079NP5FTZ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78739"
+    },
+    {
+        "time": "2026-08-09 15:55:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.cc/hUYomwK | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:55:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78738"
+    },
+    {
+        "time": "2026-08-09 15:55:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78738"
+    },
+    {
+        "time": "2026-08-09 15:55:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.cc/hUs4Tps | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 15:55:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78737"
+    },
+    {
+        "time": "2026-08-09 15:55:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78737"
+    },
+    {
+        "time": "2026-08-09 15:55:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C3QX34K9?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:24",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78736"
+    },
+    {
+        "time": "2026-08-09 15:55:27",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DK7LK8PM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78735"
+    },
+    {
+        "time": "2026-08-09 15:55:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CZHC7LZN?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:30",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78734"
+    },
+    {
+        "time": "2026-08-09 15:55:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0i03qvzD | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78733"
+    },
+    {
+        "time": "2026-08-09 15:55:43",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B04q5zePQ | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78732"
+    },
+    {
+        "time": "2026-08-09 15:55:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0hkmKnv3 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78731"
+    },
+    {
+        "time": "2026-08-09 15:55:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0jiBFMtX | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:55:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78730"
+    },
+    {
+        "time": "2026-08-09 15:56:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0fUvgGKS | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:56:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78729"
+    },
+    {
+        "time": "2026-08-09 15:56:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09RG3QT7V?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:56:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78728"
+    },
+    {
+        "time": "2026-08-09 15:56:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07G4G66L6?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 15:56:06",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78727"
+    },
+    {
+        "time": "2026-08-09 15:56:07",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 16:07:44",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-09 16:07:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkrcxf | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:07:49",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 873"
+    },
+    {
+        "time": "2026-08-09 16:07:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 873"
+    },
+    {
+        "time": "2026-08-09 16:07:51",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkrcxf | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:07:53",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 872"
+    },
+    {
+        "time": "2026-08-09 16:07:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 872"
+    },
+    {
+        "time": "2026-08-09 16:07:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nxg6u8 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:07:56",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 871"
+    },
+    {
+        "time": "2026-08-09 16:07:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 871"
+    },
+    {
+        "time": "2026-08-09 16:07:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68fudg | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:00",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 870"
+    },
+    {
+        "time": "2026-08-09 16:08:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 870"
+    },
+    {
+        "time": "2026-08-09 16:08:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nt4vax | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:06",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 869"
+    },
+    {
+        "time": "2026-08-09 16:08:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 869"
+    },
+    {
+        "time": "2026-08-09 16:08:09",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3fsu2 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:10",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 868"
+    },
+    {
+        "time": "2026-08-09 16:08:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 868"
+    },
+    {
+        "time": "2026-08-09 16:08:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkhq4f | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:14",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 867"
+    },
+    {
+        "time": "2026-08-09 16:08:15",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 867"
+    },
+    {
+        "time": "2026-08-09 16:08:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/qr1lxiz | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:17",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 866"
+    },
+    {
+        "time": "2026-08-09 16:08:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 866"
+    },
+    {
+        "time": "2026-08-09 16:08:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6n38er | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 865"
+    },
+    {
+        "time": "2026-08-09 16:08:21",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 865"
+    },
+    {
+        "time": "2026-08-09 16:08:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/ne7nme | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:24",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 864"
+    },
+    {
+        "time": "2026-08-09 16:08:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 864"
+    },
+    {
+        "time": "2026-08-09 16:08:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/ne7nme | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:28",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 863"
+    },
+    {
+        "time": "2026-08-09 16:08:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 863"
+    },
+    {
+        "time": "2026-08-09 16:08:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6c2ysc | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:33",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 862"
+    },
+    {
+        "time": "2026-08-09 16:08:33",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 862"
+    },
+    {
+        "time": "2026-08-09 16:08:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3h43b | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:36",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 861"
+    },
+    {
+        "time": "2026-08-09 16:08:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 861"
+    },
+    {
+        "time": "2026-08-09 16:08:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/2q2x7yv | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:39",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 860"
+    },
+    {
+        "time": "2026-08-09 16:08:39",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 860"
+    },
+    {
+        "time": "2026-08-09 16:08:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nf8y84 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:44",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 859"
+    },
+    {
+        "time": "2026-08-09 16:08:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 859"
+    },
+    {
+        "time": "2026-08-09 16:08:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/99v0fi5 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:46",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 858"
+    },
+    {
+        "time": "2026-08-09 16:08:46",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 858"
+    },
+    {
+        "time": "2026-08-09 16:08:49",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/62ukyc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:51",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 857"
+    },
+    {
+        "time": "2026-08-09 16:08:51",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 857"
+    },
+    {
+        "time": "2026-08-09 16:08:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nu8wmq | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:08:54",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 856"
+    },
+    {
+        "time": "2026-08-09 16:08:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 856"
+    },
+    {
+        "time": "2026-08-09 16:08:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/mb83nrg | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:08:57",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 855"
+    },
+    {
+        "time": "2026-08-09 16:08:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 855"
+    },
+    {
+        "time": "2026-08-09 16:08:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68t4f2 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:09:00",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 854"
+    },
+    {
+        "time": "2026-08-09 16:09:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 854"
+    },
+    {
+        "time": "2026-08-09 16:09:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3ardc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:09:04",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 853"
+    },
+    {
+        "time": "2026-08-09 16:09:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 853"
+    },
+    {
+        "time": "2026-08-09 16:09:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mpem7 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:09:08",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 851"
+    },
+    {
+        "time": "2026-08-09 16:09:08",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 851"
+    },
+    {
+        "time": "2026-08-09 16:09:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mpem7 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:09:12",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 850"
+    },
+    {
+        "time": "2026-08-09 16:09:12",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 850"
+    },
+    {
+        "time": "2026-08-09 16:09:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/64x3xw | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:09:15",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 849"
+    },
+    {
+        "time": "2026-08-09 16:09:15",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 849"
+    },
+    {
+        "time": "2026-08-09 16:09:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/64x3xw | Status Code: 403"
+    },
+    {
+        "time": "2026-08-09 16:09:18",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 848"
+    },
+    {
+        "time": "2026-08-09 16:09:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 848"
+    },
+    {
+        "time": "2026-08-09 16:09:18",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 16:44:24",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 16:44:30",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B07RMQJ8t | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:30",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78779"
+    },
+    {
+        "time": "2026-08-09 16:44:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DT9S54DJ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:35",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78778: images\\amazinglootsdealsoffers_78778.jpg"
+    },
+    {
+        "time": "2026-08-09 16:44:35",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78778"
+    },
+    {
+        "time": "2026-08-09 16:44:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H33TDRZ7?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:38",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78777"
+    },
+    {
+        "time": "2026-08-09 16:44:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GNTPPLC5?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:41",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78776"
+    },
+    {
+        "time": "2026-08-09 16:44:44",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GMRQHZLJ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78775"
+    },
+    {
+        "time": "2026-08-09 16:44:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FHWXP7DL?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:47",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78774"
+    },
+    {
+        "time": "2026-08-09 16:44:49",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FNDG6LNQ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78773"
+    },
+    {
+        "time": "2026-08-09 16:44:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GHZ3NYK7?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:52",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78772"
+    },
+    {
+        "time": "2026-08-09 16:44:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CV12LJKC?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78771"
+    },
+    {
+        "time": "2026-08-09 16:44:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BMVLRSN3?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:44:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78770"
+    },
+    {
+        "time": "2026-08-09 16:45:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B006G84J5W?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:45:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78769"
+    },
+    {
+        "time": "2026-08-09 16:45:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BXDH35WX?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 16:45:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78768"
+    },
+    {
+        "time": "2026-08-09 16:45:04",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 16:47:23",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 16:47:24",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 18:27:14",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 18:27:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GGRDG6GG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:16",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78787"
+    },
+    {
+        "time": "2026-08-09 18:27:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0G3VCGXH6?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:19",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78786"
+    },
+    {
+        "time": "2026-08-09 18:27:20",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CR7P925R?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78785"
+    },
+    {
+        "time": "2026-08-09 18:27:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BGJJP8GJ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:23",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78784"
+    },
+    {
+        "time": "2026-08-09 18:27:27",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B004VAjdY | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78783"
+    },
+    {
+        "time": "2026-08-09 18:27:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?s=price-asc-rank&hidden-keywords=B0DXTW7P64%2B%7CB0DXTQ6JFD&qid=1786114921&ds=v1%3Ai0RApgNyXk9rvuA9fLq9LROFTo4kvkrGqIGTjMpDBSQ&tag=Rickeykaran77-21& | Status Code: 503"
+    },
+    {
+        "time": "2026-08-09 18:27:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78782"
+    },
+    {
+        "time": "2026-08-09 18:27:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0iL7TZWG | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 18:27:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78780"
+    },
+    {
+        "time": "2026-08-09 18:27:31",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 18:31:57",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 18:31:58",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 19:00:49",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 19:00:50",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 19:05:35",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-09 19:05:35",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 19:10:53",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-09 19:10:54",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 19:15:53",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 19:15:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B01C3s5nu | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 19:15:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78790"
+    },
+    {
+        "time": "2026-08-09 19:15:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/9364687671?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-09 19:16:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78789"
+    },
+    {
+        "time": "2026-08-09 19:16:00",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-09 19:17:44",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-09 19:17:44",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 10:42:56",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-10 10:42:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09VL1338B?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:42:59",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78856"
+    },
+    {
+        "time": "2026-08-10 10:43:01",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GMHBQ22V?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78855"
+    },
+    {
+        "time": "2026-08-10 10:43:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F1CPG1WG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78854"
+    },
+    {
+        "time": "2026-08-10 10:43:08",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CSSNNTZT?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:08",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78853"
+    },
+    {
+        "time": "2026-08-10 10:43:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F99RHJLM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:11",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78852"
+    },
+    {
+        "time": "2026-08-10 10:43:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0H1N5V3P3?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78851"
+    },
+    {
+        "time": "2026-08-10 10:43:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B01AW5P0QQ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78850"
+    },
+    {
+        "time": "2026-08-10 10:43:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C85RG8HG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:21",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78849"
+    },
+    {
+        "time": "2026-08-10 10:43:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GQV87X3B?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78848"
+    },
+    {
+        "time": "2026-08-10 10:43:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FBGQ6SS9?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 10:43:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78847"
+    },
+    {
+        "time": "2026-08-10 10:43:29",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 10:44:17",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 10:44:17",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 10:48:10",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 10:48:11",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 11:38:41",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 11:38:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6juns4 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:38:56",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 903: images\\allpackbypiyush_903.jpg"
+    },
+    {
+        "time": "2026-08-10 11:38:57",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 903"
+    },
+    {
+        "time": "2026-08-10 11:39:01",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68frwe | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:03",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 902: images\\allpackbypiyush_902.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 902"
+    },
+    {
+        "time": "2026-08-10 11:39:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/dgis92d | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:09",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 901: images\\allpackbypiyush_901.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 901"
+    },
+    {
+        "time": "2026-08-10 11:39:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/79zjdd1 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 900: images\\allpackbypiyush_900.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 900"
+    },
+    {
+        "time": "2026-08-10 11:39:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6jaepj | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 899: images\\allpackbypiyush_899.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 899"
+    },
+    {
+        "time": "2026-08-10 11:39:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68z2yy | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:26",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 898: images\\allpackbypiyush_898.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 898"
+    },
+    {
+        "time": "2026-08-10 11:39:30",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nfg8at | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:31",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 897: images\\allpackbypiyush_897.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 897"
+    },
+    {
+        "time": "2026-08-10 11:39:34",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nekawe | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 11:39:36",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 896: images\\allpackbypiyush_896.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 896"
+    },
+    {
+        "time": "2026-08-10 11:39:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6ra9pr | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 11:39:41",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 895: images\\allpackbypiyush_895.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:41",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 895"
+    },
+    {
+        "time": "2026-08-10 11:39:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/s/60l6w9h | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 11:39:44",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 894: images\\allpackbypiyush_894.jpg"
+    },
+    {
+        "time": "2026-08-10 11:39:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 894"
+    },
+    {
+        "time": "2026-08-10 11:39:44",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 11:47:11",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 11:47:12",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 12:11:32",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 12:11:33",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 12:19:41",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-10 12:19:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DVGLR7TW?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 12:19:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78863"
+    },
+    {
+        "time": "2026-08-10 12:19:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0F7XHGTPK?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 12:19:46",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78862"
+    },
+    {
+        "time": "2026-08-10 12:19:46",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 13:17:58",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:17:58",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 13:19:58",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:20:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6c4yyf | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:20:03",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 893: images\\allpackbypiyush_893.jpg"
+    },
+    {
+        "time": "2026-08-10 13:20:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 893"
+    },
+    {
+        "time": "2026-08-10 13:20:04",
+        "status": "STOPPED",
+        "message": "Scraping stopped for allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:20:04",
+        "status": "STOPPED",
+        "message": "Scraping stopped for allpackbypiyush. Messages scraped: 1, Messages saved: 1"
+    },
+    {
+        "time": "2026-08-10 13:44:24",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:44:24",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 13:44:38",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:44:38",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 13:44:49",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:44:50",
+        "status": "STOPPED",
+        "message": "Scraping stopped for Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:44:50",
+        "status": "STOPPED",
+        "message": "Scraping stopped for Allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 13:45:00",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 13:45:00",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 13:48:41",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_Ajio_Sale_Deals_offers_li"
+    },
+    {
+        "time": "2026-08-10 13:48:44",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CD5QSDXM?psc=1&th=1&smid=ARENK22K2PQRH&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:48:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7909"
+    },
+    {
+        "time": "2026-08-10 13:48:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B018HSHIHY?psc=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:48:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7908"
+    },
+    {
+        "time": "2026-08-10 13:48:49",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BYKSXHYK?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:48:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7907"
+    },
+    {
+        "time": "2026-08-10 13:48:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GJ65N63T?th=1&smid=AXOGFIT0PZZ7G&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:48:52",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7906"
+    },
+    {
+        "time": "2026-08-10 13:48:54",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GGBQK167?psc=1&th=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 13:48:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7905"
+    },
+    {
+        "time": "2026-08-10 13:48:55",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 14:06:33",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_Ajio_sale_deals_offers_li"
+    },
+    {
+        "time": "2026-08-10 14:06:36",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CD5QSDXM?psc=1&th=1&smid=ARENK22K2PQRH&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:06:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7909"
+    },
+    {
+        "time": "2026-08-10 14:06:39",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B018HSHIHY?psc=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:06:39",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7908"
+    },
+    {
+        "time": "2026-08-10 14:06:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BYKSXHYK?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:06:41",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7907"
+    },
+    {
+        "time": "2026-08-10 14:06:43",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GJ65N63T?th=1&smid=AXOGFIT0PZZ7G&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:06:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7906"
+    },
+    {
+        "time": "2026-08-10 14:06:46",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GGBQK167?psc=1&th=1&smid=A15APWRK6P7LBV&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:06:47",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7905"
+    },
+    {
+        "time": "2026-08-10 14:06:47",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 14:07:05",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_Ajio_sale_deals_offers_li"
+    },
+    {
+        "time": "2026-08-10 14:07:08",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/mn6CLZ | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:07:09",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7904"
+    },
+    {
+        "time": "2026-08-10 14:07:10",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07Y8RR8L4?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:07:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7903"
+    },
+    {
+        "time": "2026-08-10 14:07:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/l/100881745031?pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-2&pf_rd_i=87233534031&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:07:12",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7902"
+    },
+    {
+        "time": "2026-08-10 14:07:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GZ4FX8W3?tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:07:18",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 7901: images\\myntra_Ajio_sale_deals_offers_li_7901.jpg"
+    },
+    {
+        "time": "2026-08-10 14:07:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7901"
+    },
+    {
+        "time": "2026-08-10 14:07:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DVGLR7TW?psc=1&th=1&tag=Your91deals10-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:07:21",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 7900"
+    },
+    {
+        "time": "2026-08-10 14:07:21",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 14:09:33",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:09:33",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 14:09:48",
+        "status": "SUCCESS",
+        "message": "Connected to Allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:09:49",
+        "status": "SUCCESS",
+        "message": "deals.json updated successfully"
+    },
+    {
+        "time": "2026-08-10 14:21:01",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:21:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3d4dj | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:21:07",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 892: images\\allpackbypiyush_892.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 892"
+    },
+    {
+        "time": "2026-08-10 14:21:11",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 891: images\\allpackbypiyush_891.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:12",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 891"
+    },
+    {
+        "time": "2026-08-10 14:21:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/64kar2 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:21:17",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 880: images\\allpackbypiyush_880.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 880"
+    },
+    {
+        "time": "2026-08-10 14:21:20",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mvmfj | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:21:21",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 879: images\\allpackbypiyush_879.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 879"
+    },
+    {
+        "time": "2026-08-10 14:21:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/667hyr | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:21:26",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 878: images\\allpackbypiyush_878.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 878"
+    },
+    {
+        "time": "2026-08-10 14:21:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3tn6u | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:21:30",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 877: images\\allpackbypiyush_877.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 877"
+    },
+    {
+        "time": "2026-08-10 14:21:33",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n36n24 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:21:34",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 876: images\\allpackbypiyush_876.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:35",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 876"
+    },
+    {
+        "time": "2026-08-10 14:21:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n36n24 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:21:39",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 875: images\\allpackbypiyush_875.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:39",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 875"
+    },
+    {
+        "time": "2026-08-10 14:21:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/nzueczp | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:21:42",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 874: images\\allpackbypiyush_874.jpg"
+    },
+    {
+        "time": "2026-08-10 14:21:42",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 874"
+    },
+    {
+        "time": "2026-08-10 14:21:43",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 9, Messages saved: 9"
+    },
+    {
+        "time": "2026-08-10 14:35:43",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:35:44",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 14:36:18",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:36:18",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 14:36:30",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:36:33",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkrcxf | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:36:34",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 873: images\\allpackbypiyush_873.jpg"
+    },
+    {
+        "time": "2026-08-10 14:36:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 873"
+    },
+    {
+        "time": "2026-08-10 14:36:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkrcxf | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:36:38",
+        "status": "STOPPED",
+        "message": "Scraping stopped for allpackbypiyush. Messages scraped: 1, Messages saved: 1"
+    },
+    {
+        "time": "2026-08-10 14:52:28",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:52:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkrcxf | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:52:33",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 872: images\\allpackbypiyush_872.jpg"
+    },
+    {
+        "time": "2026-08-10 14:52:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 872"
+    },
+    {
+        "time": "2026-08-10 14:52:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nxg6u8 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 14:52:37",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 871: images\\allpackbypiyush_871.jpg"
+    },
+    {
+        "time": "2026-08-10 14:52:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 871"
+    },
+    {
+        "time": "2026-08-10 14:52:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68fudg | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:52:43",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 870: images\\allpackbypiyush_870.jpg"
+    },
+    {
+        "time": "2026-08-10 14:52:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 870"
+    },
+    {
+        "time": "2026-08-10 14:52:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nt4vax | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:52:49",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 869: images\\allpackbypiyush_869.jpg"
+    },
+    {
+        "time": "2026-08-10 14:52:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 869"
+    },
+    {
+        "time": "2026-08-10 14:52:49",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 4, Messages saved: 4"
+    },
+    {
+        "time": "2026-08-10 14:55:45",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:55:46",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 14:55:58",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 14:56:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3fsu2 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:56:04",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 868: images\\allpackbypiyush_868.jpg"
+    },
+    {
+        "time": "2026-08-10 14:56:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 868"
+    },
+    {
+        "time": "2026-08-10 14:56:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkhq4f | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 14:56:08",
+        "status": "STOPPED",
+        "message": "Scraping stopped for allpackbypiyush. Messages scraped: 1, Messages saved: 1"
+    },
+    {
+        "time": "2026-08-10 15:07:54",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 15:07:55",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 15:13:56",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 15:13:56",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 15:26:47",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 15:26:50",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 15:55:49",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootdealsoffers"
+    },
+    {
+        "time": "2026-08-10 15:55:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3zsHK7F | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 15:55:58",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5958: images\\amazinglootdealsoffers_5958.jpg"
+    },
+    {
+        "time": "2026-08-10 15:55:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5958"
+    },
+    {
+        "time": "2026-08-10 15:56:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3BLBqdx | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 15:56:05",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5957: images\\amazinglootdealsoffers_5957.jpg"
+    },
+    {
+        "time": "2026-08-10 15:56:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5957"
+    },
+    {
+        "time": "2026-08-10 15:56:05",
+        "status": "STOPPED",
+        "message": "Scraping stopped for amazinglootdealsoffers. Messages scraped: 2, Messages saved: 2"
+    },
+    {
+        "time": "2026-08-10 16:14:40",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffers"
+    },
+    {
+        "time": "2026-08-10 16:14:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.cc/heHCr7B | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:14:44",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 78873: images\\amazinglootsdealsoffers_78873.jpg"
+    },
+    {
+        "time": "2026-08-10 16:14:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78873"
+    },
+    {
+        "time": "2026-08-10 16:14:46",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?s=exact-aware-popularity-rank&hidden-keywords=B0GWHK9L6Q%7CB0GNYRT146%7CB0H265T5BR&qid=1786353452&ds=v1%3APLWnsFAKpgu9j8Gbu4139PCUWURY9xwR2gYJjZc%2FCQk&tag=Rickeykaran77-21& | Status Code: 503"
+    },
+    {
+        "time": "2026-08-10 16:14:46",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78872"
+    },
+    {
+        "time": "2026-08-10 16:14:49",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B00KCD8NFY?th=&tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:14:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78871"
+    },
+    {
+        "time": "2026-08-10 16:14:51",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?hidden-keywords=B0FDKHT3V8%7CB0GCNML1P7%7CB0BPT3YQ4Y%7CB09PRH5Q49%7CB0BQC76JB7%7CB0GVSYH5H4&tag=Rickeykaran77-21& | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:14:51",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78870"
+    },
+    {
+        "time": "2026-08-10 16:14:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GNRN5619?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:14:54",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78869"
+    },
+    {
+        "time": "2026-08-10 16:14:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CD5QSDXM?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:14:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78868"
+    },
+    {
+        "time": "2026-08-10 16:14:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B018HSHIHY?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:14:59",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78867"
+    },
+    {
+        "time": "2026-08-10 16:15:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GGBQK167?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78866"
+    },
+    {
+        "time": "2026-08-10 16:15:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fkrt.co/REdcxX | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:15:03",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78865"
+    },
+    {
+        "time": "2026-08-10 16:15:05",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B07Y8RR8L4?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78864"
+    },
+    {
+        "time": "2026-08-10 16:15:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B03xJB5gg | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:11",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78861"
+    },
+    {
+        "time": "2026-08-10 16:15:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0FPRCDS5J?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78860"
+    },
+    {
+        "time": "2026-08-10 16:15:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0dkkdm6Q | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:16",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78857"
+    },
+    {
+        "time": "2026-08-10 16:15:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CB3HWFYV?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78846"
+    },
+    {
+        "time": "2026-08-10 16:15:22",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B00ID50PYU?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78845"
+    },
+    {
+        "time": "2026-08-10 16:15:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0D66P1Y13?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78844"
+    },
+    {
+        "time": "2026-08-10 16:15:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DKFWV2K8?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78843"
+    },
+    {
+        "time": "2026-08-10 16:15:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0C85RG8HG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78842"
+    },
+    {
+        "time": "2026-08-10 16:15:33",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BGJ3ZMFZ?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78841"
+    },
+    {
+        "time": "2026-08-10 16:15:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0DWV9LTSG?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78840"
+    },
+    {
+        "time": "2026-08-10 16:15:40",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08MV41WZS?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78839"
+    },
+    {
+        "time": "2026-08-10 16:15:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0CMTQBNQT?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:43",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78838"
+    },
+    {
+        "time": "2026-08-10 16:15:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B097PD8HSY?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:46",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78837"
+    },
+    {
+        "time": "2026-08-10 16:15:48",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GGBQMT9K?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78836"
+    },
+    {
+        "time": "2026-08-10 16:15:51",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B00FBO4HKY?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:52",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78835"
+    },
+    {
+        "time": "2026-08-10 16:15:54",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0GR1528P7?tag=Rickeykaran77-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:55",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78834"
+    },
+    {
+        "time": "2026-08-10 16:15:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B0794zy8A | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:15:59",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78833"
+    },
+    {
+        "time": "2026-08-10 16:16:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://link.amazon/B02v8ySDy | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:16:03",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 78832"
+    },
+    {
+        "time": "2026-08-10 16:16:03",
+        "status": "SUCCESS",
+        "message": "Scraping completed for amazinglootsdealsoffers. Messages scraped: 28, Messages saved: 28"
+    },
+    {
+        "time": "2026-08-10 16:17:57",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootdealsoffers"
+    },
+    {
+        "time": "2026-08-10 16:18:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3BvVnEZ | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:18:07",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5956: images\\amazinglootdealsoffers_5956.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5956"
+    },
+    {
+        "time": "2026-08-10 16:18:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3x580mV | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:18:12",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5955: images\\amazinglootdealsoffers_5955.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5955"
+    },
+    {
+        "time": "2026-08-10 16:18:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bit.ly/3i1ikbh | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:18:19",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5954"
+    },
+    {
+        "time": "2026-08-10 16:18:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bit.ly/3x3gQBI | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:18:26",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5953: images\\amazinglootdealsoffers_5953.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5953"
+    },
+    {
+        "time": "2026-08-10 16:18:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/2UAkBkZ | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:18:33",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5952: images\\amazinglootdealsoffers_5952.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:33",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5952"
+    },
+    {
+        "time": "2026-08-10 16:18:39",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bit.ly/3zwm8ap | Status Code: 500"
+    },
+    {
+        "time": "2026-08-10 16:18:39",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5951"
+    },
+    {
+        "time": "2026-08-10 16:18:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://bit.ly/3x6h4I1 | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:18:46",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5950: images\\amazinglootdealsoffers_5950.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:47",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5950"
+    },
+    {
+        "time": "2026-08-10 16:18:57",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3eRj68Z | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:18:58",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 5949: images\\amazinglootdealsoffers_5949.jpg"
+    },
+    {
+        "time": "2026-08-10 16:18:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 5949"
+    },
+    {
+        "time": "2026-08-10 16:18:58",
+        "status": "SUCCESS",
+        "message": "Scraping completed for amazinglootdealsoffers. Messages scraped: 8, Messages saved: 8"
+    },
+    {
+        "time": "2026-08-10 16:24:56",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 16:25:09",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nkhq4f | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:25:10",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 867: images\\allpackbypiyush_867.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 867"
+    },
+    {
+        "time": "2026-08-10 16:25:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/qr1lxiz | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:25:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 866: images\\allpackbypiyush_866.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 866"
+    },
+    {
+        "time": "2026-08-10 16:25:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6n38er | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:25:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 865: images\\allpackbypiyush_865.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 865"
+    },
+    {
+        "time": "2026-08-10 16:25:27",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/ne7nme | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:25:28",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 864: images\\allpackbypiyush_864.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 864"
+    },
+    {
+        "time": "2026-08-10 16:25:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/ne7nme | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:25:37",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 863: images\\allpackbypiyush_863.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 863"
+    },
+    {
+        "time": "2026-08-10 16:25:54",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6c2ysc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:25:55",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 862: images\\allpackbypiyush_862.jpg"
+    },
+    {
+        "time": "2026-08-10 16:25:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 862"
+    },
+    {
+        "time": "2026-08-10 16:26:00",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3h43b | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:02",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 861: images\\allpackbypiyush_861.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:03",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 861"
+    },
+    {
+        "time": "2026-08-10 16:26:04",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/2q2x7yv | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:07",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 860: images\\allpackbypiyush_860.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 860"
+    },
+    {
+        "time": "2026-08-10 16:26:25",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nf8y84 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:27",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 859: images\\allpackbypiyush_859.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:28",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 859"
+    },
+    {
+        "time": "2026-08-10 16:26:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/99v0fi5 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:31",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 858: images\\allpackbypiyush_858.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:31",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 858"
+    },
+    {
+        "time": "2026-08-10 16:26:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/62ukyc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:40",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 857: images\\allpackbypiyush_857.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 857"
+    },
+    {
+        "time": "2026-08-10 16:26:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/nu8wmq | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:48",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 856: images\\allpackbypiyush_856.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:49",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 856"
+    },
+    {
+        "time": "2026-08-10 16:26:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://web.lehlah.club/share/mb83nrg | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:26:53",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 855: images\\allpackbypiyush_855.jpg"
+    },
+    {
+        "time": "2026-08-10 16:26:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 855"
+    },
+    {
+        "time": "2026-08-10 16:27:01",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/68t4f2 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:27:04",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 854: images\\allpackbypiyush_854.jpg"
+    },
+    {
+        "time": "2026-08-10 16:27:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 854"
+    },
+    {
+        "time": "2026-08-10 16:27:14",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/n3ardc | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:27:16",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 853: images\\allpackbypiyush_853.jpg"
+    },
+    {
+        "time": "2026-08-10 16:27:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 853"
+    },
+    {
+        "time": "2026-08-10 16:27:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mpem7 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:27:25",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 851: images\\allpackbypiyush_851.jpg"
+    },
+    {
+        "time": "2026-08-10 16:27:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 851"
+    },
+    {
+        "time": "2026-08-10 16:27:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/6mpem7 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:27:33",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 850: images\\allpackbypiyush_850.jpg"
+    },
+    {
+        "time": "2026-08-10 16:27:34",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 850"
+    },
+    {
+        "time": "2026-08-10 16:27:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.wishlink.com/share/64x3xw | Status Code: 403"
+    },
+    {
+        "time": "2026-08-10 16:27:39",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 849: images\\allpackbypiyush_849.jpg"
+    },
+    {
+        "time": "2026-08-10 16:27:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 849"
+    },
+    {
+        "time": "2026-08-10 16:27:40",
+        "status": "STOPPED",
+        "message": "Scraping stopped for allpackbypiyush. Messages scraped: 18, Messages saved: 18"
+    },
+    {
+        "time": "2026-08-10 16:31:04",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_deals_shopsy"
+    },
+    {
+        "time": "2026-08-10 16:31:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy9dgi4)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:31:14",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366220: images\\myntra_ajio_deals_shopsy_366220.jpg"
+    },
+    {
+        "time": "2026-08-10 16:31:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366220"
+    },
+    {
+        "time": "2026-08-10 16:31:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy8wb5d)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:31:19",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366219: images\\myntra_ajio_deals_shopsy_366219.jpg"
+    },
+    {
+        "time": "2026-08-10 16:31:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366219"
+    },
+    {
+        "time": "2026-08-10 16:31:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hykgg6l)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:31:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366218"
+    },
+    {
+        "time": "2026-08-10 16:31:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy29y2g)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:31:27",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366217: images\\myntra_ajio_deals_shopsy_366217.jpg"
+    },
+    {
+        "time": "2026-08-10 16:31:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366217"
+    },
+    {
+        "time": "2026-08-10 16:31:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy6zilu)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:31:29",
+        "status": "STOPPED",
+        "message": "Scraping stopped for myntra_ajio_deals_shopsy. Messages scraped: 4, Messages saved: 4"
+    },
+    {
+        "time": "2026-08-10 16:33:49",
+        "status": "ERROR",
+        "message": "amazing_loot_deals_offers_li: No user has \"amazing_loot_deals_offers_li\" as username"
+    },
+    {
+        "time": "2026-08-10 16:33:49",
+        "status": "ERROR",
+        "message": "No user has \"amazing_loot_deals_offers_li\" as username"
+    },
+    {
+        "time": "2026-08-10 16:34:13",
+        "status": "ERROR",
+        "message": "amazingloot_deals_offers_li: No user has \"amazingloot_deals_offers_li\" as username"
+    },
+    {
+        "time": "2026-08-10 16:34:13",
+        "status": "ERROR",
+        "message": "No user has \"amazingloot_deals_offers_li\" as username"
+    },
+    {
+        "time": "2026-08-10 16:35:06",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootdealsoffer"
+    },
+    {
+        "time": "2026-08-10 16:35:07",
+        "status": "SUCCESS",
+        "message": "Scraping completed for amazinglootdealsoffer. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 16:35:54",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffer"
+    },
+    {
+        "time": "2026-08-10 16:35:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ekaro.in/enkr20231008s37032062 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:03",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 262: images\\amazinglootsdealsoffer_262.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:03",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 262"
+    },
+    {
+        "time": "2026-08-10 16:36:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08J48QNSG?tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:07",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 261: images\\amazinglootsdealsoffer_261.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:08",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 261"
+    },
+    {
+        "time": "2026-08-10 16:36:13",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3F4gKQN | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:14",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 259: images\\amazinglootsdealsoffer_259.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:14",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 259"
+    },
+    {
+        "time": "2026-08-10 16:36:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3rQLdP0 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 258"
+    },
+    {
+        "time": "2026-08-10 16:36:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3LMS5nh | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:25",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 257: images\\amazinglootsdealsoffer_257.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 257"
+    },
+    {
+        "time": "2026-08-10 16:36:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amzn.to/3rKhVlh | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:31",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 256: images\\amazinglootsdealsoffer_256.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 256"
+    },
+    {
+        "time": "2026-08-10 16:36:35",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08498BYVG?psc=1&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:36",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 255: images\\amazinglootsdealsoffer_255.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 255"
+    },
+    {
+        "time": "2026-08-10 16:36:36",
+        "status": "STOPPED",
+        "message": "Scraping stopped for amazinglootsdealsoffer. Messages scraped: 7, Messages saved: 7"
+    },
+    {
+        "time": "2026-08-10 16:36:42",
+        "status": "SUCCESS",
+        "message": "Connected to amazinglootsdealsoffer"
+    },
+    {
+        "time": "2026-08-10 16:36:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ekaro.in/enkr20231007s36934510 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:51",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 254: images\\amazinglootsdealsoffer_254.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:52",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 254"
+    },
+    {
+        "time": "2026-08-10 16:36:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ekaro.in/enkr20231008s37028452 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:36:58",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 253: images\\amazinglootsdealsoffer_253.jpg"
+    },
+    {
+        "time": "2026-08-10 16:36:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 253"
+    },
+    {
+        "time": "2026-08-10 16:37:01",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://ekaro.in/enkr20231008s37022678 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:02",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 252: images\\amazinglootsdealsoffer_252.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:02",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 252"
+    },
+    {
+        "time": "2026-08-10 16:37:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08JC8V1NQ?th=1&psc=1&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:07",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 251: images\\amazinglootsdealsoffer_251.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 251"
+    },
+    {
+        "time": "2026-08-10 16:37:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B08C13P22F?th=1&psc=1&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 250: images\\amazinglootsdealsoffer_250.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 250"
+    },
+    {
+        "time": "2026-08-10 16:37:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?k=samsung+s23&ref=nb_sb_noss&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:16",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 249"
+    },
+    {
+        "time": "2026-08-10 16:37:19",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B09RW5M4XM?smid=A15APWRK6P7LBV&psc=1&th=1&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:20",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 248: images\\amazinglootsdealsoffer_248.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 248"
+    },
+    {
+        "time": "2026-08-10 16:37:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: http://www.amazon.in/dp/B0BJL4TDMD?tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:25",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 247: images\\amazinglootsdealsoffer_247.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:26",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 247"
+    },
+    {
+        "time": "2026-08-10 16:37:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BSS3YZTX?tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:37",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 246: images\\amazinglootsdealsoffer_246.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:37",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 246"
+    },
+    {
+        "time": "2026-08-10 16:37:41",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?i=apparel&rh=n%3A90839873031&s=price-asc-rank&hidden-keywords=-B09VPSCRGF-B0BTDC5MDB-B0BLHH6QW8-B09XJ1YDXT-B09VPS85W5-B09VPT8H66-B09XJ2JL1K-B09PRFV8CY-B0BTD9QRM5-B09746YCWR-B0BM9MC9BR-B09VPSWG3J-B09VPSDP51-B09Z78B8V9-B09Z771YTC-B09Z77JLQG-B0BTDBW3XF-B09Z76Z2NC-B0BM9P2DJ5-B09Z79MX1H-B09Z783BT2-B0B7XXB5FM-B09Z75QSGP-B09Z78PBHL-B09Z793GPN-B09Z77ZJS4-B0BM9L32FP&ds=v1%3AT0KYXFxtNKvBeex3WxXsH%2Bd%2F2QbLz5%2BIFPnlQtt3vvU&qid=1696686464&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:41",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 245"
+    },
+    {
+        "time": "2026-08-10 16:37:43",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/s?k=arrow+men%27s+shirts&i=apparel&rh=n%3A1571271031%2Cp_n_pct-off-with-tax%3A27060457031%2Cp_89%3AArrow&s=price-asc-rank&dc=&crid=3L5ZQ0X5PD99N&qid=1696704147&rnid=3837712031&sprefix=arrow%2Caps%2C558&ds=v1%3A6EigMPjx0c2uu3TNieYaQViieXTri6DDTAqh5JDAeUY&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 244"
+    },
+    {
+        "time": "2026-08-10 16:37:45",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://www.amazon.in/dp/B0BVMLNGXR?smid=A3K8GDUW67973J&psc=1&th=1&tag=milind01a-21 | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:37:47",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 242: images\\amazinglootsdealsoffer_242.jpg"
+    },
+    {
+        "time": "2026-08-10 16:37:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 242"
+    },
+    {
+        "time": "2026-08-10 16:37:48",
+        "status": "SUCCESS",
+        "message": "Scraping completed for amazinglootsdealsoffer. Messages scraped: 12, Messages saved: 12"
+    },
+    {
+        "time": "2026-08-10 16:57:35",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_deals_shopsy"
+    },
+    {
+        "time": "2026-08-10 16:57:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hy523n4)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:57:47",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366249: images\\myntra_ajio_deals_shopsy_366249.jpg"
+    },
+    {
+        "time": "2026-08-10 16:57:48",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366249"
+    },
+    {
+        "time": "2026-08-10 16:57:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hylrjmp)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:57:51",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366248"
+    },
+    {
+        "time": "2026-08-10 16:57:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy9bk4n)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:57:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366247"
+    },
+    {
+        "time": "2026-08-10 16:57:55",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hypwhjz)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:00",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366246: images\\myntra_ajio_deals_shopsy_366246.jpg"
+    },
+    {
+        "time": "2026-08-10 16:58:00",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366246"
+    },
+    {
+        "time": "2026-08-10 16:58:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy69vn1)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:04",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366245: images\\myntra_ajio_deals_shopsy_366245.jpg"
+    },
+    {
+        "time": "2026-08-10 16:58:04",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366245"
+    },
+    {
+        "time": "2026-08-10 16:58:07",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hygizok)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:09",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366244: images\\myntra_ajio_deals_shopsy_366244.jpg"
+    },
+    {
+        "time": "2026-08-10 16:58:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366244"
+    },
+    {
+        "time": "2026-08-10 16:58:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fpkrt.cc/hyw2ky5)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366243: images\\myntra_ajio_deals_shopsy_366243.jpg"
+    },
+    {
+        "time": "2026-08-10 16:58:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366243"
+    },
+    {
+        "time": "2026-08-10 16:58:15",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hytumjj)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:15",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366242"
+    },
+    {
+        "time": "2026-08-10 16:58:17",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hygpktn) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:18",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366241"
+    },
+    {
+        "time": "2026-08-10 16:58:20",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy5cmea)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 16:58:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366240"
+    },
+    {
+        "time": "2026-08-10 16:58:21",
+        "status": "SUCCESS",
+        "message": "Scraping completed for myntra_ajio_deals_shopsy. Messages scraped: 10, Messages saved: 10"
+    },
+    {
+        "time": "2026-08-10 17:46:36",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_deals_shopsy"
+    },
+    {
+        "time": "2026-08-10 17:46:39",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyyco55)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:45",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366302: images\\myntra_ajio_deals_shopsy_366302.jpg"
+    },
+    {
+        "time": "2026-08-10 17:46:45",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366302"
+    },
+    {
+        "time": "2026-08-10 17:46:47",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyxixlb)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:51",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366301: images\\myntra_ajio_deals_shopsy_366301.jpg"
+    },
+    {
+        "time": "2026-08-10 17:46:51",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366301"
+    },
+    {
+        "time": "2026-08-10 17:46:52",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyxt65p)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:53",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366300"
+    },
+    {
+        "time": "2026-08-10 17:46:54",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy7i83c)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:54",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366299"
+    },
+    {
+        "time": "2026-08-10 17:46:56",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fpkrt.cc/hy4m6e9)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:56",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366298"
+    },
+    {
+        "time": "2026-08-10 17:46:58",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hynm4et)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:46:58",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366297"
+    },
+    {
+        "time": "2026-08-10 17:46:59",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyhn3wo)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:47:01",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366296: images\\myntra_ajio_deals_shopsy_366296.jpg"
+    },
+    {
+        "time": "2026-08-10 17:47:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366296"
+    },
+    {
+        "time": "2026-08-10 17:47:03",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://mytr.cc/hyjux9a)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:47:04",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366295: images\\myntra_ajio_deals_shopsy_366295.jpg"
+    },
+    {
+        "time": "2026-08-10 17:47:05",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366295"
+    },
+    {
+        "time": "2026-08-10 17:47:06",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fpkrt.cc/hy6l6xu)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:47:06",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366294"
+    },
+    {
+        "time": "2026-08-10 17:47:08",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hyinvu5)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 17:47:10",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366293: images\\myntra_ajio_deals_shopsy_366293.jpg"
+    },
+    {
+        "time": "2026-08-10 17:47:10",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366293"
+    },
+    {
+        "time": "2026-08-10 17:47:11",
+        "status": "SUCCESS",
+        "message": "Scraping completed for myntra_ajio_deals_shopsy. Messages scraped: 10, Messages saved: 10"
+    },
+    {
+        "time": "2026-08-10 18:05:11",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 18:05:16",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 21:43:47",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_deals_shopsy"
+    },
+    {
+        "time": "2026-08-10 21:43:50",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hynwhbi)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:43:50",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366528"
+    },
+    {
+        "time": "2026-08-10 21:43:53",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://fpkrt.cc/hyzmpla)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:00",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366527: images\\myntra_ajio_deals_shopsy_366527.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:01",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366527"
+    },
+    {
+        "time": "2026-08-10 21:44:02",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hy7cl1c)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:06",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366526: images\\myntra_ajio_deals_shopsy_366526.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:07",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366526"
+    },
+    {
+        "time": "2026-08-10 21:44:11",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyg6kmm)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:13",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366525: images\\myntra_ajio_deals_shopsy_366525.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:13",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366525"
+    },
+    {
+        "time": "2026-08-10 21:44:16",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hyw7ryw)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:21",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366524: images\\myntra_ajio_deals_shopsy_366524.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366524"
+    },
+    {
+        "time": "2026-08-10 21:44:24",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hysx167)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:29",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366523: images\\myntra_ajio_deals_shopsy_366523.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366523"
+    },
+    {
+        "time": "2026-08-10 21:44:31",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy3rn72)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:35",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366522: images\\myntra_ajio_deals_shopsy_366522.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:35",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366522"
+    },
+    {
+        "time": "2026-08-10 21:44:37",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyk1tey)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:39",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366521: images\\myntra_ajio_deals_shopsy_366521.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366521"
+    },
+    {
+        "time": "2026-08-10 21:44:42",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hy5kp7b)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:44",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366520: images\\myntra_ajio_deals_shopsy_366520.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:44",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366520"
+    },
+    {
+        "time": "2026-08-10 21:44:46",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyffy42)** | Status Code: 200"
+    },
+    {
+        "time": "2026-08-10 21:44:50",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 366519: images\\myntra_ajio_deals_shopsy_366519.jpg"
+    },
+    {
+        "time": "2026-08-10 21:44:51",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 366519"
+    },
+    {
+        "time": "2026-08-10 21:44:51",
+        "status": "SUCCESS",
+        "message": "Scraping completed for myntra_ajio_deals_shopsy. Messages scraped: 10, Messages saved: 10"
+    },
+    {
+        "time": "2026-08-10 21:45:36",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 21:45:37",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
+    },
+    {
+        "time": "2026-08-10 21:46:04",
+        "status": "SUCCESS",
+        "message": "Connected to allpackbypiyush"
+    },
+    {
+        "time": "2026-08-10 21:46:08",
+        "status": "SUCCESS",
+        "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
     }
 ]
