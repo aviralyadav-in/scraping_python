@@ -1,1720 +1,533 @@
 import { useEffect, useState } from "react";
+
+import Sidebar from "./components/Sidebar";
+
+import Dashboard from "./pages/Dashboard";
+import Deals from "./pages/Deals";
+import Scraping from "./pages/Scraping";
+import Jobs from "./pages/Jobs";
+import Statistics from "./pages/Statistics";
+import Duplicates from "./pages/Duplicates";
+import Logs from "./pages/Logs";
+import Users from "./pages/Users";
+
 import "./App.css";
 
 const API_URL = "http://127.0.0.1:5000";
 
 function App() {
-  const [channel, setChannel] = useState("");
-  const [limit, setLimit] = useState(10);
+  const [activePage, setActivePage] = useState("dashboard");
 
-  const [status, setStatus] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [token, setToken] = useState(
+    localStorage.getItem("token")
+  );
 
-  const [deals, setDeals] = useState([]);
-  const [dealCount, setDealCount] = useState(0);
-  const [dealPage, setDealPage] = useState(1);
-  const [dealTotalPages, setDealTotalPages] = useState(1);
+  const [currentUser, setCurrentUser] = useState(null);
 
-  const [filterChannel, setFilterChannel] = useState("");
-  const [fromDate, setFromDate] = useState("");
-  const [toDate, setToDate] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const [dealViewMode, setDealViewMode] = useState("latest");
+  const [loading, setLoading] = useState(true);
+  const [loginLoading, setLoginLoading] = useState(false);
 
-  const [logs, setLogs] = useState([]);
-  const [logPage, setLogPage] = useState(1);
-  const [logCount, setLogCount] = useState(0);
-  const [logTotalPages, setLogTotalPages] = useState(1);
-
-  const [selectedDeals, setSelectedDeals] = useState([]);
-
-  const [deleteConfirmation, setDeleteConfirmation] = useState(null);
-
-  const [editDeal, setEditDeal] = useState(null);
-  const [editContent, setEditContent] = useState("");
-  const [editProductLink, setEditProductLink] = useState("");
-  const [editImagePath, setEditImagePath] = useState("");
-  const [editLoading, setEditLoading] = useState(false);
-
-  const PAGE_LIMIT = 10;
-
-  const fetchStatus = async () => {
-    try {
-      const response = await fetch(
-        `${API_URL}/api/scrape/status/`
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        console.error("Status API error:", data);
-        return;
-      }
-
-      setStatus(data);
-    } catch (error) {
-      console.error("Status fetch error:", error);
-      setStatus(null);
-    }
-  };
-
-  const fetchDeals = async (page = dealPage) => {
-    try {
-      let displayLimit;
-
-      if (dealViewMode === "latest") {
-        const numericLimit = Number(limit);
-
-        if (
-          !Number.isInteger(numericLimit) ||
-          numericLimit < 1 ||
-          numericLimit > 100
-        ) {
-          displayLimit = 10;
-        } else {
-          displayLimit = numericLimit;
-        }
-      } else {
-        displayLimit = PAGE_LIMIT;
-      }
-
-      let url =
-        `${API_URL}/api/deals/?page=${page}&limit=${displayLimit}`;
-
-      if (filterChannel.trim()) {
-        url +=
-          `&channel=${encodeURIComponent(
-            filterChannel.trim()
-          )}`;
-      }
-
-      if (fromDate) {
-        url += `&from_date=${fromDate}`;
-      }
-
-      if (toDate) {
-        url += `&to_date=${toDate}`;
-      }
-
-      const response = await fetch(url);
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        console.error("Deals API error:", data);
-        return;
-      }
-
-      setDeals(data.results || []);
-      setDealCount(data.count || 0);
-
-      if (dealViewMode === "latest") {
-        setDealTotalPages(1);
-        setDealPage(1);
-      } else {
-        const totalPages = Math.max(
-          1,
-          Math.ceil(
-            (data.count || 0) / PAGE_LIMIT
-          )
-        );
-
-        setDealTotalPages(totalPages);
-
-        if (page > totalPages) {
-          setDealPage(totalPages);
-        }
-      }
-    } catch (error) {
-      console.error("Deals fetch error:", error);
-    }
-  };
-
-  const fetchLogs = async (page = logPage) => {
-    try {
-      const response = await fetch(
-        `${API_URL}/api/logs/?page=${page}&limit=${PAGE_LIMIT}`
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        console.error("Logs API error:", data);
-        return;
-      }
-
-      setLogs(data.results || []);
-      setLogCount(data.count || 0);
-
-      const totalPages = Math.max(
-        1,
-        Math.ceil(
-          (data.count || 0) / PAGE_LIMIT
-        )
-      );
-
-      setLogTotalPages(totalPages);
-
-      if (page > totalPages) {
-        setLogPage(totalPages);
-      }
-    } catch (error) {
-      console.error("Logs fetch error:", error);
-    }
-  };
-
-  const startScraping = async () => {
-    if (!channel.trim()) {
-      alert("Please enter channel name.");
-      return;
-    }
-
-    const numericLimit = Number(limit);
-
-    if (
-      !Number.isInteger(numericLimit) ||
-      numericLimit < 1 ||
-      numericLimit > 100
-    ) {
-      alert("Limit must be an integer between 1 and 100.");
-      return;
-    }
-
-    setLoading(true);
-
-    try {
-      const response = await fetch(
-        `${API_URL}/api/scrape/start/`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            channel: channel.trim(),
-            limit: numericLimit,
-          }),
-        }
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        alert(
-          data.error ||
-          "Failed to start scraping."
-        );
-        return;
-      }
-
-      alert(
-        data.message ||
-        "Scraping started successfully."
-      );
-
-      setDealPage(1);
-      setLogPage(1);
-
-      await fetchStatus();
-      await fetchDeals(1);
-      await fetchLogs(1);
-    } catch (error) {
-      console.error(
-        "Start scraping error:",
-        error
-      );
-
-      alert(
-        "Unable to connect to Flask backend. Make sure Flask is running on port 5000."
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const stopScraping = async () => {
-    try {
-      const response = await fetch(
-        `${API_URL}/api/scrape/stop/`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        alert(
-          data.error ||
-          "Failed to stop scraper."
-        );
-        return;
-      }
-
-      alert(
-        data.message ||
-        "Stop request received."
-      );
-
-      await fetchStatus();
-      await fetchLogs(logPage);
-    } catch (error) {
-      console.error(
-        "Stop scraping error:",
-        error
-      );
-
-      alert(
-        "Unable to connect to Flask backend. Make sure Flask is running."
-      );
-    }
-  };
-
-  const clearFilters = () => {
-    setFilterChannel("");
-    setFromDate("");
-    setToDate("");
-    setDealPage(1);
-    setSelectedDeals([]);
-   setDealViewMode("latest");
-
-    // Force clear date inputs
-    const dateInputs = document.querySelectorAll(
-    '.filters input[type="date"]'
-    );
-
-    dateInputs.forEach((input) => {
-    input.value = "";
-   });
-  };
-  
-
-  const selectLatestMode = () => {
-    setDealViewMode("latest");
-    setDealPage(1);
-    setSelectedDeals([]);
-  };
-
-  const selectViewAllMode = () => {
-    setDealViewMode("all");
-    setDealPage(1);
-    setSelectedDeals([]);
-  };
-
-  const goToDealPage = (page) => {
-    if (
-      dealViewMode !== "all"
-    ) {
-      return;
-    }
-
-    if (
-      page < 1 ||
-      page > dealTotalPages
-    ) {
-      return;
-    }
-
-    setDealPage(page);
-    setSelectedDeals([]);
-
-    fetchDeals(page);
-  };
-
-  const goToLogPage = (page) => {
-    if (
-      page < 1 ||
-      page > logTotalPages
-    ) {
-      return;
-    }
-
-    setLogPage(page);
-
-    fetchLogs(page);
-  };
+  // ==========================================
+  // CHECK EXISTING LOGIN
+  // ==========================================
 
   useEffect(() => {
-    fetchStatus();
-    fetchDeals(1);
-    fetchLogs(1);
+    const checkLogin = async () => {
+      const savedToken = localStorage.getItem("token");
+
+      if (!savedToken) {
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const response = await fetch(
+          `${API_URL}/api/auth/me/`,
+          {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${savedToken}`,
+            },
+          }
+        );
+
+        if (!response.ok) {
+          localStorage.removeItem("token");
+
+          setToken(null);
+          setCurrentUser(null);
+
+          setLoading(false);
+
+          return;
+        }
+
+        const user = await response.json();
+
+        setToken(savedToken);
+        setCurrentUser(user);
+
+        // Always start from dashboard
+        setActivePage("dashboard");
+      } catch (error) {
+        console.error(
+          "Authentication check failed:",
+          error
+        );
+
+        localStorage.removeItem("token");
+
+        setToken(null);
+        setCurrentUser(null);
+      }
+
+      setLoading(false);
+    };
+
+    checkLogin();
   }, []);
 
-  useEffect(() => {
-    setDealPage(1);
-    setSelectedDeals([]);
+  // ==========================================
+  // LOGIN
+  // ==========================================
 
-    fetchDeals(1);
-  }, [
-    filterChannel,
-    fromDate,
-    toDate,
-    dealViewMode,
-    limit,
-  ]);
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      fetchStatus();
-      fetchDeals(dealViewMode === "latest" ? 1 : dealPage);
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [
-    dealPage,
-    filterChannel,
-    fromDate,
-    toDate,
-    dealViewMode,
-    limit,
-  ]);
-
-  const toggleDealSelection = (messageId) => {
-    setSelectedDeals((previous) => {
-      if (
-        previous.includes(messageId)
-      ) {
-        return previous.filter(
-          (id) =>
-            id !== messageId
-        );
-      }
-
-      return [
-        ...previous,
-        messageId,
-      ];
-    });
-  };
-
-  const toggleSelectAll = () => {
-    const currentPageIds = deals.map(
-      (deal) => deal.message_id
-    );
-
-    const allSelected =
-      currentPageIds.length > 0 &&
-      currentPageIds.every((id) =>
-        selectedDeals.includes(id)
-      );
-
-    if (allSelected) {
-      setSelectedDeals((previous) =>
-        previous.filter(
-          (id) =>
-            !currentPageIds.includes(id)
-        )
-      );
-    } else {
-      setSelectedDeals((previous) => {
-        const newIds =
-          currentPageIds.filter(
-            (id) =>
-              !previous.includes(id)
-          );
-
-        return [
-          ...previous,
-          ...newIds,
-        ];
-      });
-    }
-  };
-
-  const isAllCurrentPageSelected =
-    deals.length > 0 &&
-    deals.every((deal) =>
-      selectedDeals.includes(
-        deal.message_id
-      )
-    );
-
-  const openDeleteConfirmation = (
-    deal
-  ) => {
-    setDeleteConfirmation({
-      type: "single",
-      deal: deal,
-    });
-  };
-
-  const openMultipleDeleteConfirmation =
-    () => {
-      if (
-        selectedDeals.length === 0
-      ) {
-        alert(
-          "Please select at least one deal to delete."
-        );
-        return;
-      }
-
-      setDeleteConfirmation({
-        type: "multiple",
-        count: selectedDeals.length,
-      });
-    };
-
-  const closeDeleteConfirmation = () => {
-    setDeleteConfirmation(null);
-  };
-
-  const deleteSingleDeal = async (
-    deal
-  ) => {
-    try {
-      const dealChannel = String(
-        deal.channel || ""
-      ).trim();
-
-      if (!dealChannel) {
-        alert(
-          "Channel is missing for this deal."
-        );
-        return;
-      }
-
-      const response = await fetch(
-        `${API_URL}/api/deals/${deal.message_id}/?channel=${encodeURIComponent(
-          dealChannel
-        )}`,
-        {
-          method: "DELETE",
-        }
-      );
-
-      const data =
-        await response.json();
-
-      if (!response.ok) {
-        alert(
-          data.error ||
-          "Failed to delete deal."
-        );
-        return;
-      }
-
-      setSelectedDeals(
-        (previous) =>
-          previous.filter(
-            (id) =>
-              id !== deal.message_id
-          )
-      );
-
-      closeDeleteConfirmation();
-
-      await fetchDeals(
-        dealViewMode === "latest"
-          ? 1
-          : dealPage
-      );
-
-      await fetchLogs(logPage);
-
-      alert(
-        data.message ||
-        "Deal deleted successfully."
-      );
-    } catch (error) {
-      console.error(
-        "Delete deal error:",
-        error
-      );
-
-      alert(
-        "Unable to connect to Flask backend."
-      );
-    }
-  };
-
-  const deleteMultipleDeals = async () => {
-    if (
-      selectedDeals.length === 0
-    ) {
-      closeDeleteConfirmation();
+    if (!email.trim() || !password.trim()) {
+      alert("Email and password are required");
       return;
     }
 
-    try {
-      const selectedDealObjects =
-        deals.filter((deal) =>
-          selectedDeals.includes(
-            deal.message_id
-          )
-        );
-
-      let deletedCount = 0;
-      let failedCount = 0;
-
-      for (
-        const deal of selectedDealObjects
-      ) {
-        const dealChannel =
-          String(
-            deal.channel || ""
-          ).trim();
-
-        if (!dealChannel) {
-          failedCount++;
-          continue;
-        }
-
-        const response =
-          await fetch(
-            `${API_URL}/api/deals/${deal.message_id}/?channel=${encodeURIComponent(
-              dealChannel
-            )}`,
-            {
-              method: "DELETE",
-            }
-          );
-
-        if (response.ok) {
-          deletedCount++;
-        } else {
-          failedCount++;
-        }
-      }
-
-      setSelectedDeals([]);
-
-      closeDeleteConfirmation();
-
-      await fetchDeals(
-        dealViewMode === "latest"
-          ? 1
-          : dealPage
-      );
-
-      await fetchLogs(logPage);
-
-      if (failedCount > 0) {
-        alert(
-          `${deletedCount} deal(s) deleted successfully. ${failedCount} deal(s) could not be deleted.`
-        );
-      } else {
-        alert(
-          `${deletedCount} deal(s) deleted successfully.`
-        );
-      }
-    } catch (error) {
-      console.error(
-        "Multiple delete error:",
-        error
-      );
-
-      alert(
-        "Unable to connect to Flask backend."
-      );
-    }
-  };
-
-  const confirmDelete = async () => {
-    if (!deleteConfirmation) {
-      return;
-    }
-
-    if (
-      deleteConfirmation.type ===
-      "single"
-    ) {
-      await deleteSingleDeal(
-        deleteConfirmation.deal
-      );
-    }
-
-    if (
-      deleteConfirmation.type ===
-      "multiple"
-    ) {
-      await deleteMultipleDeals();
-    }
-  };
-
-  const openEditModal = (deal) => {
-    setEditDeal(deal);
-
-    setEditContent(
-      deal.content || ""
-    );
-
-    setEditProductLink(
-      deal.product_link || ""
-    );
-
-    setEditImagePath(
-      deal.image_path || ""
-    );
-  };
-
-  const closeEditModal = () => {
-    if (editLoading) {
-      return;
-    }
-
-    setEditDeal(null);
-    setEditContent("");
-    setEditProductLink("");
-    setEditImagePath("");
-  };
-
-  const updateDeal = async () => {
-    if (!editDeal) {
-      return;
-    }
-
-    if (!editContent.trim()) {
-      alert(
-        "Content cannot be empty."
-      );
-      return;
-    }
-
-    if (
-      !editProductLink.trim()
-    ) {
-      alert(
-        "Product link cannot be empty."
-      );
-      return;
-    }
-
-    const dealChannel = String(
-      editDeal.channel || ""
-    ).trim();
-
-    if (!dealChannel) {
-      alert(
-        "Channel is missing for this deal."
-      );
-      return;
-    }
-
-    setEditLoading(true);
+    setLoginLoading(true);
 
     try {
       const response = await fetch(
-        `${API_URL}/api/deals/${editDeal.message_id}/update/?channel=${encodeURIComponent(
-          dealChannel
-        )}`,
+        `${API_URL}/api/auth/login/`,
         {
           method: "POST",
+
           headers: {
-            "Content-Type":
-              "application/json",
+            "Content-Type": "application/json",
           },
+
           body: JSON.stringify({
-            content:
-              editContent.trim(),
-            product_link:
-              editProductLink.trim(),
-            image_path:
-              editImagePath.trim(),
+            email: email.trim(),
+            password,
           }),
         }
       );
 
-      const data =
-        await response.json();
+      const data = await response.json();
 
       if (!response.ok) {
-        alert(
-          data.error ||
-          "Failed to update deal."
-        );
+        alert(data.error || "Login failed");
+
+        setLoginLoading(false);
+
         return;
       }
 
-      closeEditModal();
-
-      await fetchDeals(
-        dealViewMode === "latest"
-          ? 1
-          : dealPage
+      // Save token
+      localStorage.setItem(
+        "token",
+        data.token
       );
 
-      await fetchLogs(logPage);
+      setToken(data.token);
 
-      alert(
-        data.message ||
-        "Deal updated successfully."
-      );
+      setCurrentUser(data.user);
+
+      // Always open dashboard after login
+      setActivePage("dashboard");
+
+      setEmail("");
+      setPassword("");
     } catch (error) {
       console.error(
-        "Update deal error:",
+        "Login error:",
         error
       );
 
       alert(
-        "Unable to connect to Flask backend."
+        "Unable to connect to server"
       );
-    } finally {
-      setEditLoading(false);
+    }
+
+    setLoginLoading(false);
+  };
+
+  // ==========================================
+  // LOGOUT
+  // ==========================================
+
+  const handleLogout = async () => {
+    const savedToken =
+      localStorage.getItem("token");
+
+    try {
+      if (savedToken) {
+        await fetch(
+          `${API_URL}/api/auth/logout/`,
+          {
+            method: "POST",
+
+            headers: {
+              Authorization: `Bearer ${savedToken}`,
+            },
+          }
+        );
+      }
+    } catch (error) {
+      console.error(
+        "Logout error:",
+        error
+      );
+    }
+
+    localStorage.removeItem("token");
+
+    setToken(null);
+
+    setCurrentUser(null);
+
+    setActivePage("dashboard");
+  };
+
+  // ==========================================
+  // PAGE ACCESS CONTROL
+  // ==========================================
+
+  const adminPages = [
+    "scraping",
+    "jobs",
+    "statistics",
+    "duplicates",
+    "logs",
+    "users",
+  ];
+
+  const userPages = [
+    "dashboard",
+    "deals",
+    "duplicates",
+  ];
+
+  const handlePageChange = (page) => {
+    // If normal user tries to open
+    // an admin-only page
+    if (
+      currentUser?.role !== "admin" &&
+      adminPages.includes(page)
+    ) {
+      setActivePage("dashboard");
+      return;
+    }
+
+    setActivePage(page);
+  };
+
+  // ==========================================
+  // RENDER PAGE
+  // ==========================================
+
+  const renderPage = () => {
+    // Extra security:
+    // Normal user can NEVER render admin pages
+
+    if (
+      currentUser?.role !== "admin" &&
+      adminPages.includes(activePage)
+    ) {
+      return <Dashboard />;
+    }
+
+    switch (activePage) {
+      case "dashboard":
+        return <Dashboard />;
+
+      case "deals":
+        return (
+          <Deals
+            currentUser={currentUser}
+          />
+        );
+
+      case "duplicates":
+        return <Duplicates />;
+
+      // ADMIN ONLY
+
+      case "scraping":
+        return <Scraping />;
+
+      case "jobs":
+        return <Jobs />;
+
+      case "statistics":
+        return <Statistics />;
+
+      case "logs":
+        return <Logs />;
+
+      case "users":
+        return <Users />;
+
+      default:
+        return <Dashboard />;
     }
   };
 
-  const getImageUrl = (imagePath) => {
-    if (!imagePath) {
-      return "";
-    }
+  // ==========================================
+  // LOADING SCREEN
+  // ==========================================
 
-    let cleanPath =
-      String(imagePath)
-        .replaceAll("\\", "/");
+  if (loading) {
+    return (
+      <div className="app-layout">
+        <main className="main-content">
+          <div className="loading-screen">
+            <div className="loading-spinner"></div>
 
-    cleanPath =
-      cleanPath.replace(
-        /^images\//,
-        ""
-      );
+            <h2>Loading...</h2>
 
-    return `${API_URL}/images/${cleanPath
-      .split("/")
-      .map((part) =>
-        encodeURIComponent(part)
-      )
-      .join("/")}`;
-  };
+            <p>
+              Checking your account...
+            </p>
+          </div>
+        </main>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // LOGIN SCREEN
+  // ONLY LOGIN UI UPDATED
+  // ==========================================
+
+  if (!token || !currentUser) {
+    return (
+      <div className="login-page">
+
+        <div className="login-background">
+
+          {/* Decorative background elements */}
+
+          <div className="login-glow login-glow-one"></div>
+
+          <div className="login-glow login-glow-two"></div>
+
+          <div className="login-card">
+
+            {/* BRAND */}
+
+            <div className="login-brand">
+
+              <div className="login-logo">
+                TD
+              </div>
+
+              <div className="login-brand-text">
+
+                <h1>
+                  Telegram Deals
+                </h1>
+
+                <p>
+                  Scraper Dashboard
+                </p>
+
+              </div>
+
+            </div>
+
+            {/* DIVIDER */}
+
+            <div className="login-divider"></div>
+
+            {/* HEADING */}
+
+            <div className="login-heading">
+
+              <span className="login-welcome">
+                Welcome back
+              </span>
+
+              <h2>
+                Sign in to your account
+              </h2>
+
+              <p>
+                Enter your credentials to
+                continue to the dashboard.
+              </p>
+
+            </div>
+
+            {/* FORM */}
+
+            <form
+              onSubmit={handleLogin}
+              className="login-form"
+            >
+
+              {/* EMAIL */}
+
+              <div className="login-field">
+
+                <label>
+                  Email Address
+                </label>
+
+                <div className="input-wrapper">
+
+                  <span className="input-icon">
+                    @
+                  </span>
+
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) =>
+                      setEmail(
+                        e.target.value
+                      )
+                    }
+                    placeholder="Enter your email"
+                    autoComplete="email"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* PASSWORD */}
+
+              <div className="login-field">
+
+                <label>
+                  Password
+                </label>
+
+                <div className="input-wrapper">
+
+                  <span className="input-icon">
+                    •
+                  </span>
+
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) =>
+                      setPassword(
+                        e.target.value
+                      )
+                    }
+                    placeholder="Enter your password"
+                    autoComplete="current-password"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* LOGIN BUTTON */}
+
+              <button
+                type="submit"
+                className="login-button"
+                disabled={loginLoading}
+              >
+                {loginLoading ? (
+                  <>
+                    <span className="button-spinner"></span>
+
+                    Signing in...
+                  </>
+                ) : (
+                  <>
+                    <span>
+                      Sign In
+                    </span>
+
+                    <span className="login-arrow">
+                      →
+                    </span>
+                  </>
+                )}
+              </button>
+
+            </form>
+
+            {/* SECURITY INFO */}
+
+            <div className="login-security">
+
+              <span className="security-icon">
+                ✓
+              </span>
+
+              <div>
+                <strong>
+                  Secure Login
+                </strong>
+
+                <p>
+                  Your account information
+                  is protected.
+                </p>
+              </div>
+
+            </div>
+
+            {/* FOOTER */}
+
+            <div className="login-footer">
+
+              <span>
+                © 2026 Telegram Deals
+              </span>
+
+              <span>
+                •
+              </span>
+
+              <span>
+                Secure Management System
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    );
+  }
+
+  // ==========================================
+  // MAIN APPLICATION
+  // ==========================================
 
   return (
-    <div className="app">
+    <div className="app-layout">
 
-      <header className="header">
-        <h1>
-          Telegram Deals Scraper
-        </h1>
+      <Sidebar
+        activePage={activePage}
+        setActivePage={handlePageChange}
+        currentUser={currentUser}
+        onLogout={handleLogout}
+      />
 
-        <p>
-          Scraper Control Panel
-        </p>
-      </header>
+      <main className="main-content">
 
-      <section className="card">
+        {renderPage()}
 
-        <h2>
-          Scraper Control
-        </h2>
-
-        <div className="form-row">
-
-          <div className="form-group">
-
-            <label>
-              Channel Name
-            </label>
-
-            <input
-              type="text"
-              value={channel}
-              onChange={(e) =>
-                setChannel(
-                  e.target.value
-                )
-              }
-              placeholder="e.g. allpackbypiyush"
-            />
-
-          </div>
-
-          <div className="form-group">
-
-            <label>
-              Limit
-            </label>
-
-            <input
-              type="number"
-              min="1"
-              max="100"
-              value={limit}
-              onChange={(e) =>
-                setLimit(
-                  e.target.value
-                )
-              }
-            />
-
-          </div>
-
-        </div>
-
-        <div className="button-row">
-
-          <button
-            type="button"
-            className="start-btn"
-            onClick={startScraping}
-            disabled={loading}
-          >
-            {loading
-              ? "Starting..."
-              : "Start Scraping"}
-          </button>
-
-          <button
-            type="button"
-            className="stop-btn"
-            onClick={stopScraping}
-          >
-            Stop Scraping
-          </button>
-
-        </div>
-
-      </section>
-
-      <section className="card">
-
-        <h2>
-          Scraping Status
-        </h2>
-
-        {status ? (
-
-          <div className="status-grid">
-
-            <div>
-              <strong>
-                Status
-              </strong>
-
-              <span>
-                {status.status || "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Channel
-              </strong>
-
-              <span>
-                {status.channel || "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Limit
-              </strong>
-
-              <span>
-                {status.limit ?? "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Messages Scraped
-              </strong>
-
-              <span>
-                {status.messages_scraped ?? 0}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Messages Saved
-              </strong>
-
-              <span>
-                {status.messages_saved ?? 0}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Started At
-              </strong>
-
-              <span>
-                {status.started_at || "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Completed At
-              </strong>
-
-              <span>
-                {status.completed_at || "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Current Deal
-              </strong>
-
-              <span>
-                {status.current_deal || "-"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Stop Requested
-              </strong>
-
-              <span>
-                {status.stop_requested
-                  ? "Yes"
-                  : "No"}
-              </span>
-            </div>
-
-            <div>
-              <strong>
-                Error
-              </strong>
-
-              <span className="error-text">
-                {status.error || "-"}
-              </span>
-            </div>
-
-          </div>
-
-        ) : (
-
-          <p>
-            Loading status...
-          </p>
-
-        )}
-
-      </section>
-
-      <section className="card">
-
-        <div className="section-header">
-
-          <div>
-
-            <h2>
-              All Scraped Deals
-            </h2>
-
-            <p>
-              Total Deals:{" "}
-              {dealCount}
-            </p>
-
-          </div>
-
-          {selectedDeals.length > 0 && (
-
-            <button
-              type="button"
-              className="delete-selected-btn"
-              onClick={
-                openMultipleDeleteConfirmation
-              }
-            >
-              Delete Selected (
-              {selectedDeals.length})
-            </button>
-
-          )}
-
-        </div>
-
-        <div className="filters">
-
-          <div className="form-group">
-
-            <label>
-              Channel Filter
-            </label>
-
-            <input
-              type="text"
-              value={filterChannel}
-              onChange={(e) =>
-                setFilterChannel(
-                  e.target.value
-                )
-              }
-              placeholder="Channel name"
-            />
-
-          </div>
-
-          <div className="form-group">
-
-            <label>
-              From Date
-            </label>
-
-            <input
-              type="date"
-              value={fromDate}
-              onChange={(e) =>
-                setFromDate(
-                  e.target.value
-                )
-              }
-            />
-
-          </div>
-
-          <div className="form-group">
-
-            <label>
-              To Date
-            </label>
-
-            <input
-              
-              type="date"
-              value={toDate}
-              onChange={(e) =>
-                setToDate(
-                  e.target.value
-                )
-              }
-            />
-
-          </div>
-
-          <div className="filter-buttons">
-
-            <button
-              type="button"
-              className={
-                dealViewMode === "latest"
-                  ? "view-mode-btn active"
-                  : "view-mode-btn"
-              }
-              onClick={selectLatestMode}
-            >
-              Latest {limit}
-            </button>
-
-            <button
-              type="button"
-              className={
-                dealViewMode === "all"
-                  ? "view-mode-btn active"
-                  : "view-mode-btn"
-              }
-              onClick={selectViewAllMode}
-            >
-              View All
-            </button>
-
-            <button
-              type="button"
-              className="clear-btn"
-              onClick={clearFilters}
-            >
-              Clear Filters
-            </button>
-
-          </div>
-
-        </div>
-
-        <p className="deal-view-info">
-
-          {dealViewMode === "latest"
-            ? `Showing latest ${limit} matching deal(s), newest to oldest`
-            : "Showing all matching deals, 10 deals per page, newest to oldest"}
-
-        </p>
-
-        <div className="table-container">
-
-          <table>
-
-            <thead>
-
-              <tr>
-
-                <th>
-                  <input
-                    type="checkbox"
-                    checked={
-                      isAllCurrentPageSelected
-                    }
-                    onChange={
-                      toggleSelectAll
-                    }
-                  />
-                </th>
-
-                <th>
-                  Message ID
-                </th>
-
-                <th>
-                  Channel
-                </th>
-
-                <th>
-                  Date
-                </th>
-
-                <th>
-                  Content
-                </th>
-
-                <th>
-                  Product Link
-                </th>
-
-                <th>
-                  Image
-                </th>
-
-                <th>
-                  Action
-                </th>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              {deals.length > 0 ? (
-
-                deals.map((deal) => (
-
-                  <tr
-                    key={
-                      deal.message_id
-                    }
-                  >
-
-                    <td>
-
-                      <input
-                        type="checkbox"
-                        checked={selectedDeals.includes(
-                          deal.message_id
-                        )}
-                        onChange={() =>
-                          toggleDealSelection(
-                            deal.message_id
-                          )
-                        }
-                      />
-
-                    </td>
-
-                    <td>
-                      {deal.message_id}
-                    </td>
-
-                    <td>
-                      {deal.channel || "-"}
-                    </td>
-
-                    <td>
-                      {deal.date || "-"}
-                    </td>
-
-                    <td className="content-cell">
-                      {deal.content || "-"}
-                    </td>
-
-                    <td>
-
-                      {deal.product_link ? (
-
-                        <a
-                          href={
-                            deal.product_link
-                          }
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          Open Link
-                        </a>
-
-                      ) : (
-                        "-"
-                      )}
-
-                    </td>
-
-                    <td>
-
-                      {deal.image_path ? (
-
-                        <img
-                          src={getImageUrl(
-                            deal.image_path
-                          )}
-                          alt="Product"
-                          className="deal-image"
-                          onError={(e) => {
-                            e.currentTarget.style.display =
-                              "none";
-                          }}
-                        />
-
-                      ) : (
-                        "-"
-                      )}
-
-                    </td>
-
-                    <td>
-
-                      <div className="action-buttons">
-
-                        <button
-                          type="button"
-                          className="edit-btn"
-                          onClick={() =>
-                            openEditModal(
-                              deal
-                            )
-                          }
-                        >
-                          Edit
-                        </button>
-
-                        <button
-                          type="button"
-                          className="delete-btn"
-                          onClick={() =>
-                            openDeleteConfirmation(
-                              deal
-                            )
-                          }
-                        >
-                          Delete
-                        </button>
-
-                      </div>
-
-                    </td>
-
-                  </tr>
-
-                ))
-
-              ) : (
-
-                <tr>
-
-                  <td
-                    colSpan="8"
-                    className="no-data"
-                  >
-                    No deals found
-                  </td>
-
-                </tr>
-
-              )}
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-        {dealViewMode === "all" &&
-          dealCount > 0 && (
-
-            <div className="pagination">
-
-              <button
-                type="button"
-                onClick={() =>
-                  goToDealPage(
-                    dealPage - 1
-                  )
-                }
-                disabled={
-                  dealPage === 1
-                }
-              >
-                Previous
-              </button>
-
-              <span>
-                Page {dealPage} of{" "}
-                {dealTotalPages}
-              </span>
-
-              <button
-                type="button"
-                onClick={() =>
-                  goToDealPage(
-                    dealPage + 1
-                  )
-                }
-                disabled={
-                  dealPage ===
-                  dealTotalPages
-                }
-              >
-                Next
-              </button>
-
-            </div>
-
-          )}
-
-      </section>
-
-      <section className="card">
-
-        <div className="section-header">
-
-          <div>
-
-            <h2>
-              Scraping Logs
-            </h2>
-
-            <p>
-              Total Logs: {logCount}
-            </p>
-
-          </div>
-
-        </div>
-
-        <div className="table-container">
-
-          <table>
-
-            <thead>
-
-              <tr>
-
-                <th>
-                  Time
-                </th>
-
-                <th>
-                  Status
-                </th>
-
-                <th>
-                  Message
-                </th>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              {logs.length > 0 ? (
-
-                logs.map(
-                  (log, index) => (
-
-                    <tr
-                      key={index}
-                    >
-
-                      <td>
-                        {log.time ||
-                          log.date ||
-                          "-"}
-                      </td>
-
-                      <td>
-
-                        <span className="log-status">
-                          {log.status ||
-                            "-"}
-                        </span>
-
-                      </td>
-
-                      <td>
-                        {log.message ||
-                          "-"}
-                      </td>
-
-                    </tr>
-
-                  )
-                )
-
-              ) : (
-
-                <tr>
-
-                  <td
-                    colSpan="3"
-                    className="no-data"
-                  >
-                    No logs found
-                  </td>
-
-                </tr>
-
-              )}
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-        {logCount > 0 && (
-
-          <div className="pagination">
-
-            <button
-              type="button"
-              onClick={() =>
-                goToLogPage(
-                  logPage - 1
-                )
-              }
-              disabled={
-                logPage === 1
-              }
-            >
-              Previous
-            </button>
-
-            <span>
-              Page {logPage} of{" "}
-              {logTotalPages}
-            </span>
-
-            <button
-              type="button"
-              onClick={() =>
-                goToLogPage(
-                  logPage + 1
-                )
-              }
-              disabled={
-                logPage ===
-                logTotalPages
-              }
-            >
-              Next
-            </button>
-
-          </div>
-
-        )}
-
-      </section>
-
-      {deleteConfirmation && (
-
-        <div className="confirmation-overlay">
-
-          <div className="confirmation-popup">
-
-            <h3>
-              Confirm Delete
-            </h3>
-
-            {deleteConfirmation.type ===
-            "single" ? (
-
-              <p>
-                Are you sure you want
-                to delete this deal?
-              </p>
-
-            ) : (
-
-              <p>
-                Are you sure you want
-                to delete{" "}
-                <strong>
-                  {
-                    deleteConfirmation.count
-                  }
-                </strong>{" "}
-                selected deal(s)?
-              </p>
-
-            )}
-
-            <div className="confirmation-buttons">
-
-              <button
-                type="button"
-                className="cancel-delete-btn"
-                onClick={
-                  closeDeleteConfirmation
-                }
-              >
-                No
-              </button>
-
-              <button
-                type="button"
-                className="confirm-delete-btn"
-                onClick={
-                  confirmDelete
-                }
-              >
-                Yes, Delete
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      )}
-
-      {editDeal && (
-
-        <div className="confirmation-overlay">
-
-          <div className="edit-modal">
-
-            <h2>
-              Edit Deal
-            </h2>
-
-            <div className="form-group">
-
-              <label>
-                Message ID
-              </label>
-
-              <input
-                type="text"
-                value={
-                  editDeal.message_id
-                }
-                disabled
-              />
-
-            </div>
-
-            <div className="form-group">
-
-              <label>
-                Channel
-              </label>
-
-              <input
-                type="text"
-                value={
-                  editDeal.channel ||
-                  ""
-                }
-                disabled
-              />
-
-            </div>
-
-            <div className="form-group">
-
-              <label>
-                Content
-              </label>
-
-              <textarea
-                value={editContent}
-                onChange={(e) =>
-                  setEditContent(
-                    e.target.value
-                  )
-                }
-                rows="8"
-              />
-
-            </div>
-
-            <div className="form-group">
-
-              <label>
-                Product Link
-              </label>
-
-              <input
-                type="text"
-                value={
-                  editProductLink
-                }
-                onChange={(e) =>
-                  setEditProductLink(
-                    e.target.value
-                  )
-                }
-              />
-
-            </div>
-
-            <div className="form-group">
-
-              <label>
-                Image Path
-              </label>
-
-              <input
-                type="text"
-                value={
-                  editImagePath
-                }
-                onChange={(e) =>
-                  setEditImagePath(
-                    e.target.value
-                  )
-                }
-              />
-
-            </div>
-
-            <div className="confirmation-buttons">
-
-              <button
-                type="button"
-                className="cancel-delete-btn"
-                onClick={
-                  closeEditModal
-                }
-                disabled={
-                  editLoading
-                }
-              >
-                Cancel
-              </button>
-
-              <button
-                type="button"
-                className="save-btn"
-                onClick={
-                  updateDeal
-                }
-                disabled={
-                  editLoading
-                }
-              >
-                {editLoading
-                  ? "Saving..."
-                  : "Save Changes"}
-              </button>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      )}
+      </main>
 
     </div>
   );
