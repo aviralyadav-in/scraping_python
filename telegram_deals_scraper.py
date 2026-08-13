@@ -315,6 +315,10 @@ async def main(
             item_link = extract_link(
                 message
             )
+            # Remove Markdown bold markers (**) from product link
+            if item_link and item_link != "No Link Found":
+                item_link = re.sub(r"\*\*", "", item_link).strip()
+
 
             print(
                 "Product Link:",
@@ -338,6 +342,9 @@ async def main(
                 if message.text
                 else ""
             )
+
+            # Remove Markdown bold markers (**) from deal content
+            content = re.sub(r"\*\*", "", content)
 
             image_path = ""
 
