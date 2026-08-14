@@ -1,22 +1,15 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
-
-import Dashboard from "./pages/Dashboard";
-import Deals from "./pages/Deals";
-import Scraping from "./pages/Scraping";
-import Jobs from "./pages/Jobs";
-import Statistics from "./pages/Statistics";
-import Duplicates from "./pages/Duplicates";
-import Logs from "./pages/Logs";
-import Users from "./pages/Users";
+import AppRoutes from "./Routes";
 
 import "./App.css";
 
 const API_URL = "http://127.0.0.1:5000";
 
 function App() {
-  const [activePage, setActivePage] = useState("dashboard");
+  const navigate = useNavigate();
 
   const [token, setToken] = useState(
     localStorage.getItem("token")
@@ -69,9 +62,6 @@ function App() {
 
         setToken(savedToken);
         setCurrentUser(user);
-
-        // Always start from dashboard
-        setActivePage("dashboard");
       } catch (error) {
         console.error(
           "Authentication check failed:",
@@ -141,11 +131,9 @@ function App() {
 
       setCurrentUser(data.user);
 
-      // Always open dashboard after login
-      setActivePage("dashboard");
-
       setEmail("");
       setPassword("");
+      navigate("/dashboard", { replace: true });
     } catch (error) {
       console.error(
         "Login error:",
@@ -191,94 +179,8 @@ function App() {
     localStorage.removeItem("token");
 
     setToken(null);
-
     setCurrentUser(null);
-
-    setActivePage("dashboard");
-  };
-
-  // ==========================================
-  // PAGE ACCESS CONTROL
-  // ==========================================
-
-  const adminPages = [
-    "scraping",
-    "jobs",
-    "statistics",
-    "duplicates",
-    "logs",
-    "users",
-  ];
-
-  const userPages = [
-    "dashboard",
-    "deals",
-    "duplicates",
-  ];
-
-  const handlePageChange = (page) => {
-    // If normal user tries to open
-    // an admin-only page
-    if (
-      currentUser?.role !== "admin" &&
-      adminPages.includes(page)
-    ) {
-      setActivePage("dashboard");
-      return;
-    }
-
-    setActivePage(page);
-  };
-
-  // ==========================================
-  // RENDER PAGE
-  // ==========================================
-
-  const renderPage = () => {
-    // Extra security:
-    // Normal user can NEVER render admin pages
-
-    if (
-      currentUser?.role !== "admin" &&
-      adminPages.includes(activePage)
-    ) {
-      return <Dashboard />;
-    }
-
-    switch (activePage) {
-      case "dashboard":
-        return <Dashboard />;
-
-      case "deals":
-        return (
-          <Deals
-            currentUser={currentUser}
-          />
-        );
-
-      case "duplicates":
-        return <Duplicates />;
-
-      // ADMIN ONLY
-
-      case "scraping":
-        return <Scraping />;
-
-      case "jobs":
-        return <Jobs />;
-
-      case "statistics":
-        return <Statistics />;
-
-      case "logs":
-        return <Logs />;
-
-      case "users":
-        return <Users />;
-
-      default:
-        return <Dashboard />;
-    }
+    navigate("/", { replace: true });
   };
 
   // ==========================================
@@ -288,17 +190,25 @@ function App() {
   if (loading) {
     return (
       <div className="app-layout">
+
         <main className="main-content">
+
           <div className="loading-screen">
+
             <div className="loading-spinner"></div>
 
-            <h2>Loading...</h2>
+            <h2>
+              Loading...
+            </h2>
 
             <p>
               Checking your account...
             </p>
+
           </div>
+
         </main>
+
       </div>
     );
   }
@@ -441,6 +351,7 @@ function App() {
                 className="login-button"
                 disabled={loginLoading}
               >
+
                 {loginLoading ? (
                   <>
                     <span className="button-spinner"></span>
@@ -458,6 +369,7 @@ function App() {
                     </span>
                   </>
                 )}
+
               </button>
 
             </form>
@@ -471,6 +383,7 @@ function App() {
               </span>
 
               <div>
+
                 <strong>
                   Secure Login
                 </strong>
@@ -479,6 +392,7 @@ function App() {
                   Your account information
                   is protected.
                 </p>
+
               </div>
 
             </div>
@@ -511,21 +425,22 @@ function App() {
 
   // ==========================================
   // MAIN APPLICATION
+  // REACT ROUTER
   // ==========================================
 
   return (
     <div className="app-layout">
 
       <Sidebar
-        activePage={activePage}
-        setActivePage={handlePageChange}
         currentUser={currentUser}
         onLogout={handleLogout}
       />
 
       <main className="main-content">
 
-        {renderPage()}
+        <AppRoutes
+          currentUser={currentUser}
+        />
 
       </main>
 

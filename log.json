@@ -5413,8 +5413,6 @@
         "time": "2026-08-10 21:46:08",
         "status": "SUCCESS",
         "message": "Scraping completed for allpackbypiyush. Messages scraped: 0, Messages saved: 0"
-<<<<<<< Updated upstream
-=======
     },
     {
         "time": "2026-08-11 17:23:51",
@@ -6295,6 +6293,155 @@
         "time": "2026-08-13 20:24:00",
         "status": "SUCCESS",
         "message": "Scraping completed for myntra_ajio_deals_shopsy. Messages scraped: 10, Messages saved: 10"
->>>>>>> Stashed changes
+    },
+    {
+        "time": "2026-08-14 18:02:10",
+        "status": "SUCCESS",
+        "message": "Connected to myntra_ajio_deals_shopsy"
+    },
+    {
+        "time": "2026-08-14 18:02:12",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hy7sq59) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:17",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369280: images\\myntra_ajio_deals_shopsy_369280.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:17",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369280"
+    },
+    {
+        "time": "2026-08-14 18:02:18",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyuveq2) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:19",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369279: images\\myntra_ajio_deals_shopsy_369279.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:20",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369279"
+    },
+    {
+        "time": "2026-08-14 18:02:21",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyfj44v) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:22",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369278: images\\myntra_ajio_deals_shopsy_369278.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:22",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369278"
+    },
+    {
+        "time": "2026-08-14 18:02:23",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyknje2) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:25",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369277: images\\myntra_ajio_deals_shopsy_369277.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:25",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369277"
+    },
+    {
+        "time": "2026-08-14 18:02:26",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hytu66l) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:27",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369276: images\\myntra_ajio_deals_shopsy_369276.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:27",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369276"
+    },
+    {
+        "time": "2026-08-14 18:02:28",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyc8u9u) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:29",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369275"
+    },
+    {
+        "time": "2026-08-14 18:02:29",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hyqe33x) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:31",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369274: images\\myntra_ajio_deals_shopsy_369274.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:32",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369274"
+    },
+    {
+        "time": "2026-08-14 18:02:32",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hypnvd9) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:33",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369273"
+    },
+    {
+        "time": "2026-08-14 18:02:33",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://amznn.cc/hytg4uu) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:35",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369272: images\\myntra_ajio_deals_shopsy_369272.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:36",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369272"
+    },
+    {
+        "time": "2026-08-14 18:02:38",
+        "status": "SUCCESS",
+        "message": "Validated Product Link: https://shopsy.uk/hysuvdv) | Status Code: 200"
+    },
+    {
+        "time": "2026-08-14 18:02:40",
+        "status": "SUCCESS",
+        "message": "Image downloaded for Message ID 369271: images\\myntra_ajio_deals_shopsy_369271.jpg"
+    },
+    {
+        "time": "2026-08-14 18:02:40",
+        "status": "SUCCESS",
+        "message": "Scraped Message ID 369271"
+    },
+    {
+        "time": "2026-08-14 18:02:41",
+        "status": "SUCCESS",
+        "message": "Scraping completed for myntra_ajio_deals_shopsy. Messages scraped: 10, Messages saved: 10"
     }
 ]

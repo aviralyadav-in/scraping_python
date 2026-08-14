@@ -1,78 +1,55 @@
+import { NavLink } from "react-router-dom";
+
 function Sidebar({
-  activePage,
-  setActivePage,
   currentUser,
   onLogout
 }) {
-
-  // ==========================================
-  // COMMON MENU ITEMS
-  // These are visible to everyone
-  // ==========================================
-
   const commonMenuItems = [
     {
       name: "Dashboard",
-      key: "dashboard"
+      path: "/dashboard"
     },
     {
       name: "Deals",
-      key: "deals"
+      path: "/deals"
     },
     {
       name: "Duplicates",
-      key: "duplicates"
+      path: "/duplicates"
     }
   ];
-
-  // ==========================================
-  // ADMIN ONLY MENU ITEMS
-  // ==========================================
 
   const adminMenuItems = [
     {
       name: "Scraping",
-      key: "scraping"
+      path: "/scraping"
     },
     {
       name: "Scraping Jobs",
-      key: "jobs"
+      path: "/jobs"
     },
     {
       name: "Statistics",
-      key: "statistics"
+      path: "/statistics"
     },
     {
       name: "Logs",
-      key: "logs"
+      path: "/logs"
     },
     {
       name: "Users",
-      key: "users"
+      path: "/users"
     }
   ];
 
-  // ==========================================
-  // CHECK USER ROLE
-  // ==========================================
-
   const isAdmin =
     currentUser?.role === "admin";
-
-  // ==========================================
-  // FINAL MENU
-  // ==========================================
 
   const menuItems = isAdmin
     ? [...commonMenuItems, ...adminMenuItems]
     : commonMenuItems;
 
-  // ==========================================
-  // LOGOUT
-  // ==========================================
-
   const handleLogout = () => {
-
     const confirmed = window.confirm(
       "Are you sure you want to logout?"
     );
@@ -81,25 +58,18 @@ function Sidebar({
       return;
     }
 
-    // Use parent logout function
-    // so backend session is also cleared
     if (onLogout) {
       onLogout();
     } else {
       localStorage.removeItem("token");
-      window.location.href = "/login";
+      window.location.href = "/";
     }
   };
 
   return (
     <aside className="sidebar">
 
-      {/* ======================================
-          SIDEBAR HEADER
-      ====================================== */}
-
       <div className="sidebar-header">
-
         <h2>
           Telegram Deals
         </h2>
@@ -107,42 +77,27 @@ function Sidebar({
         <p>
           Scraper
         </p>
-
       </div>
-
-      {/* ======================================
-          NAVIGATION
-      ====================================== */}
 
       <nav className="sidebar-nav">
 
         {menuItems.map((item) => (
-
-          <button
-            key={item.key}
-            className={
-              activePage === item.key
+          <NavLink
+            key={item.path}
+            to={item.path}
+            className={({ isActive }) =>
+              isActive
                 ? "nav-item active"
                 : "nav-item"
             }
-            onClick={() =>
-              setActivePage(item.key)
-            }
           >
             {item.name}
-          </button>
-
+          </NavLink>
         ))}
 
       </nav>
 
-      {/* ======================================
-          FOOTER
-      ====================================== */}
-
       <div className="sidebar-footer">
-
-        {/* Current user */}
 
         {currentUser && (
           <div className="sidebar-user">
