@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 import Sidebar from "./components/Sidebar";
 import AppRoutes from "./Routes";
+import ProfileMenu from "./components/ProfileMenu";
 
 import "./App.css";
 
@@ -10,6 +11,7 @@ const API_URL = "http://127.0.0.1:5000";
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const [token, setToken] = useState(
     localStorage.getItem("token")
@@ -23,13 +25,10 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [loginLoading, setLoginLoading] = useState(false);
 
-  // ==========================================
-  // CHECK EXISTING LOGIN
-  // ==========================================
-
   useEffect(() => {
     const checkLogin = async () => {
-      const savedToken = localStorage.getItem("token");
+      const savedToken =
+        localStorage.getItem("token");
 
       if (!savedToken) {
         setLoading(false);
@@ -49,12 +48,9 @@ function App() {
 
         if (!response.ok) {
           localStorage.removeItem("token");
-
           setToken(null);
           setCurrentUser(null);
-
           setLoading(false);
-
           return;
         }
 
@@ -69,7 +65,6 @@ function App() {
         );
 
         localStorage.removeItem("token");
-
         setToken(null);
         setCurrentUser(null);
       }
@@ -80,15 +75,13 @@ function App() {
     checkLogin();
   }, []);
 
-  // ==========================================
-  // LOGIN
-  // ==========================================
-
   const handleLogin = async (e) => {
     e.preventDefault();
 
     if (!email.trim() || !password.trim()) {
-      alert("Email and password are required");
+      alert(
+        "Email and password are required"
+      );
       return;
     }
 
@@ -99,11 +92,9 @@ function App() {
         `${API_URL}/api/auth/login/`,
         {
           method: "POST",
-
           headers: {
             "Content-Type": "application/json",
           },
-
           body: JSON.stringify({
             email: email.trim(),
             password,
@@ -114,26 +105,28 @@ function App() {
       const data = await response.json();
 
       if (!response.ok) {
-        alert(data.error || "Login failed");
+        alert(
+          data.error || "Login failed"
+        );
 
         setLoginLoading(false);
-
         return;
       }
 
-      // Save token
       localStorage.setItem(
         "token",
         data.token
       );
 
       setToken(data.token);
-
       setCurrentUser(data.user);
 
       setEmail("");
       setPassword("");
-      navigate("/dashboard", { replace: true });
+
+      navigate("/dashboard", {
+        replace: true,
+      });
     } catch (error) {
       console.error(
         "Login error:",
@@ -148,10 +141,6 @@ function App() {
     setLoginLoading(false);
   };
 
-  // ==========================================
-  // LOGOUT
-  // ==========================================
-
   const handleLogout = async () => {
     const savedToken =
       localStorage.getItem("token");
@@ -162,9 +151,9 @@ function App() {
           `${API_URL}/api/auth/logout/`,
           {
             method: "POST",
-
             headers: {
-              Authorization: `Bearer ${savedToken}`,
+              Authorization:
+                `Bearer ${savedToken}`,
             },
           }
         );
@@ -180,43 +169,29 @@ function App() {
 
     setToken(null);
     setCurrentUser(null);
-    navigate("/", { replace: true });
-  };
 
-  // ==========================================
-  // LOADING SCREEN
-  // ==========================================
+    navigate("/", {
+      replace: true,
+    });
+  };
 
   if (loading) {
     return (
       <div className="app-layout">
-
         <main className="main-content">
-
           <div className="loading-screen">
-
             <div className="loading-spinner"></div>
 
-            <h2>
-              Loading...
-            </h2>
+            <h2>Loading...</h2>
 
             <p>
               Checking your account...
             </p>
-
           </div>
-
         </main>
-
       </div>
     );
   }
-
-  // ==========================================
-  // LOGIN SCREEN
-  // ONLY LOGIN UI UPDATED
-  // ==========================================
 
   if (!token || !currentUser) {
     return (
@@ -224,15 +199,11 @@ function App() {
 
         <div className="login-background">
 
-          {/* Decorative background elements */}
-
           <div className="login-glow login-glow-one"></div>
 
           <div className="login-glow login-glow-two"></div>
 
           <div className="login-card">
-
-            {/* BRAND */}
 
             <div className="login-brand">
 
@@ -254,11 +225,7 @@ function App() {
 
             </div>
 
-            {/* DIVIDER */}
-
             <div className="login-divider"></div>
-
-            {/* HEADING */}
 
             <div className="login-heading">
 
@@ -277,14 +244,10 @@ function App() {
 
             </div>
 
-            {/* FORM */}
-
             <form
               onSubmit={handleLogin}
               className="login-form"
             >
-
-              {/* EMAIL */}
 
               <div className="login-field">
 
@@ -314,8 +277,6 @@ function App() {
 
               </div>
 
-              {/* PASSWORD */}
-
               <div className="login-field">
 
                 <label>
@@ -344,8 +305,6 @@ function App() {
 
               </div>
 
-              {/* LOGIN BUTTON */}
-
               <button
                 type="submit"
                 className="login-button"
@@ -355,7 +314,6 @@ function App() {
                 {loginLoading ? (
                   <>
                     <span className="button-spinner"></span>
-
                     Signing in...
                   </>
                 ) : (
@@ -373,8 +331,6 @@ function App() {
               </button>
 
             </form>
-
-            {/* SECURITY INFO */}
 
             <div className="login-security">
 
@@ -396,8 +352,6 @@ function App() {
               </div>
 
             </div>
-
-            {/* FOOTER */}
 
             <div className="login-footer">
 
@@ -423,10 +377,18 @@ function App() {
     );
   }
 
-  // ==========================================
-  // MAIN APPLICATION
-  // REACT ROUTER
-  // ==========================================
+  const isProfilePage =
+    location.pathname === "/profile";
+
+  if (isProfilePage) {
+    return (
+      <div className="profile-route">
+        <AppRoutes
+          currentUser={currentUser}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="app-layout">
@@ -437,6 +399,15 @@ function App() {
       />
 
       <main className="main-content">
+
+        <div className="top-header">
+
+          <ProfileMenu
+            currentUser={currentUser}
+            onLogout={handleLogout}
+          />
+
+        </div>
 
         <AppRoutes
           currentUser={currentUser}

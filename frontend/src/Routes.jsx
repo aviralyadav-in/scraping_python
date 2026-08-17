@@ -8,8 +8,13 @@ import Jobs from "./pages/Jobs";
 import Statistics from "./pages/Statistics";
 import Logs from "./pages/Logs";
 import Users from "./pages/Users";
+import Profile from "./pages/Profile";
 
-function ProtectedRoute({ currentUser, children, adminOnly = false }) {
+function ProtectedRoute({
+  currentUser,
+  children,
+  adminOnly = false
+}) {
   if (!currentUser) {
     return <Navigate to="/" replace />;
   }
@@ -24,6 +29,7 @@ function ProtectedRoute({ currentUser, children, adminOnly = false }) {
 function AppRoutes({ currentUser }) {
   return (
     <Routes>
+
       <Route
         path="/"
         element={<Navigate to="/dashboard" replace />}
@@ -56,7 +62,16 @@ function AppRoutes({ currentUser }) {
         }
       />
 
-      {/* ADMIN ONLY */}
+      <Route
+        path="/profile"
+        element={
+          <ProtectedRoute currentUser={currentUser}>
+            <Profile currentUser={currentUser} />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* Admin only */}
 
       <Route
         path="/scraping"
@@ -113,7 +128,7 @@ function AppRoutes({ currentUser }) {
             currentUser={currentUser}
             adminOnly
           >
-            <Users />
+            <Users  currentUser={currentUser}  />
           </ProtectedRoute>
         }
       />
@@ -122,6 +137,7 @@ function AppRoutes({ currentUser }) {
         path="*"
         element={<Navigate to="/dashboard" replace />}
       />
+
     </Routes>
   );
 }

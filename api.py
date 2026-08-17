@@ -201,6 +201,213 @@ def register_routes(app):
         }), 200
 
     @app.route(
+        "/api/profile/",
+        methods=["PUT"]
+    )
+    @login_required
+    def update_my_profile():
+
+        user = get_current_user()
+
+        if not request.is_json:
+            return jsonify({
+                "error": "Request body must be JSON"
+            }), 400
+
+        data = request.get_json()
+
+        if not isinstance(data, dict):
+            return jsonify({
+                "error": "Request body must be a JSON object"
+            }), 400
+
+        name = data.get("name")
+        email = data.get("email")
+
+        if name is None and email is None:
+            return jsonify({
+                "error": "At least name or email is required"
+            }), 400
+
+        if name is not None:
+
+            if not isinstance(name, str):
+                return jsonify({
+                    "error": "Name must be a string"
+                }), 400
+
+            name = name.strip()
+
+            if not name:
+                return jsonify({
+                    "error": "Name cannot be empty"
+                }), 400
+
+        if email is not None:
+
+            if not isinstance(email, str):
+                return jsonify({
+                    "error": "Email must be a string"
+                }), 400
+
+            email = email.strip().lower()
+
+            if not email:
+                return jsonify({
+                    "error": "Email cannot be empty"
+                }), 400
+
+            existing_user = get_user_by_email(email)
+
+            if existing_user and existing_user["id"] != user["id"]:
+                return jsonify({
+                    "error": "Email is already registered"
+                }), 409
+
+        try:
+
+            conn = get_connection()
+            cursor = conn.cursor()
+
+            if name is not None and email is not None:
+
+                cursor.execute(
+                    """
+                    UPDATE users
+                    SET name = %s,
+                        email = %s
+                    WHERE id = %s
+                    RETURNING id, name, email, role;
+                    """,
+                    (name, email, user["id"])
+                )
+
+            elif name is not None:
+
+                cursor.execute(
+                    """
+                    UPDATE users
+                    SET name = %s
+                    WHERE id = %s
+                    RETURNING id, name, email, role;
+                    """,
+                    (name, user["id"])
+                )
+
+            else:
+
+                cursor.execute(
+                    """
+                    UPDATE users
+                    SET email = %s
+                    WHERE id = %s
+                    RETURNING id, name, email, role;
+                    """,
+                    (email, user["id"])
+                )
+
+            updated_user = cursor.fetchone()
+
+            conn.commit()
+
+            cursor.close()
+            conn.close()
+
+            return jsonify({
+                "message": "Profile updated successfully",
+                "user": {
+                    "id": updated_user[0],
+                    "name": updated_user[1],
+                    "email": updated_user[2],
+                    "role": updated_user[3]
+                }
+            }), 200
+
+        except Exception as e:
+
+            return jsonify({
+                "error": "Database error",
+                "message": str(e)
+            }), 500
+
+
+    @app.route(
+        "/api/auth/change-password/",
+        methods=["POST"]
+    )
+    @login_required
+    def change_password():
+
+        user = get_current_user()
+
+        if not request.is_json:
+            return jsonify({
+                "error": "Request body must be JSON"
+            }), 400
+
+        data = request.get_json()
+
+        current_password = data.get("current_password")
+        new_password = data.get("new_password")
+
+        if not current_password:
+            return jsonify({
+                "error": "Current password is required"
+            }), 400
+
+        if not new_password:
+            return jsonify({
+                "error": "New password is required"
+            }), 400
+
+        if len(new_password) < 6:
+            return jsonify({
+                "error": "New password must contain at least 6 characters"
+            }), 400
+
+        if not check_password_hash(
+            user["password_hash"],
+            current_password
+        ):
+            return jsonify({
+                "error": "Current password is incorrect"
+            }), 401
+
+        try:
+
+            new_password_hash = generate_password_hash(
+                new_password
+            )
+
+            conn = get_connection()
+            cursor = conn.cursor()
+
+            cursor.execute(
+                """
+                UPDATE users
+                SET password_hash = %s
+                WHERE id = %s
+                """,
+                (new_password_hash, user["id"])
+            )
+
+            conn.commit()
+
+            cursor.close()
+            conn.close()
+
+            return jsonify({
+                "message": "Password changed successfully"
+            }), 200
+
+        except Exception as e:
+
+            return jsonify({
+                "error": "Database error",
+                "message": str(e)
+            }), 500
+
+    @app.route(
         "/api/users/",
         methods=["POST"]
     )

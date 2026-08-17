@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const API_URL = "http://127.0.0.1:5000";
 
-function Users() {
+function Users({ currentUser }) {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -11,6 +11,8 @@ function Users() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const [viewingUser, setViewingUser] = useState(null);
 
   const [editingUser, setEditingUser] = useState(null);
   const [editName, setEditName] = useState("");
@@ -36,7 +38,11 @@ function Users() {
         return;
       }
 
-      setUsers(data.results || []);
+      const normalUsers = (data.results || []).filter(
+        (user) => String(user.id) !== String(currentUser?.id)
+      );
+
+      setUsers(normalUsers);
     } catch (error) {
       console.error("Fetch users error:", error);
       alert("Unable to connect to server");
@@ -90,6 +96,14 @@ function Users() {
       console.error("Create user error:", error);
       alert("Unable to connect to server");
     }
+  };
+
+  const handleViewUser = (user) => {
+    setViewingUser(user);
+  };
+
+  const closeViewModal = () => {
+    setViewingUser(null);
   };
 
   const handleEditUser = (user) => {
@@ -188,7 +202,7 @@ function Users() {
 
         <div>
           <h1>Users</h1>
-          <p>Manage system users</p>
+          <p>View and manage system users</p>
         </div>
 
         <div className="users-header-actions">
@@ -237,9 +251,7 @@ function Users() {
                 <input
                   type="text"
                   value={name}
-                  onChange={(e) =>
-                    setName(e.target.value)
-                  }
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="Enter name"
                 />
               </div>
@@ -250,9 +262,7 @@ function Users() {
                 <input
                   type="email"
                   value={email}
-                  onChange={(e) =>
-                    setEmail(e.target.value)
-                  }
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter email"
                 />
               </div>
@@ -263,9 +273,7 @@ function Users() {
                 <input
                   type="password"
                   value={password}
-                  onChange={(e) =>
-                    setPassword(e.target.value)
-                  }
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter password"
                 />
               </div>
@@ -301,80 +309,210 @@ function Users() {
         </div>
       )}
 
+      {viewingUser && (
+        <div
+          className="user-modal-overlay"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              closeViewModal();
+            }
+          }}
+        >
+          <div className="user-view-modal">
+
+            <div className="user-modal-header">
+
+              <div>
+                <span className="user-modal-label">
+                  USER PROFILE
+                </span>
+
+                <h2>{viewingUser.name}</h2>
+
+                <p>View account information</p>
+              </div>
+
+              <button
+                className="user-modal-close"
+                onClick={closeViewModal}
+              >
+                ×
+              </button>
+
+            </div>
+
+            <div className="user-profile-top">
+
+              <div className="user-profile-avatar">
+                {(viewingUser.name || "U")
+                  .charAt(0)
+                  .toUpperCase()}
+              </div>
+
+              <div>
+                <h3>{viewingUser.name}</h3>
+
+                <p>{viewingUser.email}</p>
+
+                <span className="user-role-badge">
+                  {viewingUser.role === "admin"
+                    ? "Administrator"
+                    : "User"}
+                </span>
+              </div>
+
+            </div>
+
+            <div className="user-profile-grid">
+
+              <div className="user-detail-box">
+                <span>User ID</span>
+                <strong>{viewingUser.id}</strong>
+              </div>
+
+              <div className="user-detail-box">
+                <span>Full Name</span>
+                <strong>{viewingUser.name}</strong>
+              </div>
+
+              <div className="user-detail-box">
+                <span>Email Address</span>
+                <strong>{viewingUser.email}</strong>
+              </div>
+
+              <div className="user-detail-box">
+                <span>Account Role</span>
+                <strong>
+                  {viewingUser.role === "admin"
+                    ? "Administrator"
+                    : "User"}
+                </strong>
+              </div>
+
+              <div className="user-detail-box">
+                <span>Account Status</span>
+                <strong className="user-active-status">
+                  ● Active
+                </strong>
+              </div>
+
+              <div className="user-detail-box">
+                <span>Created At</span>
+                <strong>
+                  {viewingUser.created_at || "-"}
+                </strong>
+              </div>
+
+            </div>
+
+            <div className="user-modal-actions">
+
+              <button
+                className="user-secondary-btn"
+                onClick={closeViewModal}
+              >
+                Close
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      )}
+
       {editingUser && (
         <div
-          className="confirmation-overlay"
+          className="user-modal-overlay"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               closeEditModal();
             }
           }}
         >
+          <div className="user-view-modal">
 
-          <div className="edit-modal">
-
-            <div className="bulk-update-header">
+            <div className="user-modal-header">
 
               <div>
+                <span className="user-modal-label">
+                  USER MANAGEMENT
+                </span>
+
                 <h2>Edit User</h2>
-                <p>Update user information</p>
+
+                <p>
+                  Update this user's account information.
+                </p>
               </div>
 
               <button
                 type="button"
-                className="clear-btn"
+                className="user-modal-close"
                 onClick={closeEditModal}
               >
-                ✕
+                ×
               </button>
 
             </div>
 
             <form onSubmit={handleUpdateUser}>
 
-              <div className="form-group">
-                <label>Name</label>
+              <div className="user-edit-form">
 
-                <input
-                  type="text"
-                  value={editName}
-                  onChange={(e) =>
-                    setEditName(e.target.value)
-                  }
-                  placeholder="Enter name"
-                  autoFocus
-                />
+                <div className="form-group">
+                  <label>Full Name</label>
+
+                  <input
+                    type="text"
+                    value={editName}
+                    onChange={(e) =>
+                      setEditName(e.target.value)
+                    }
+                    placeholder="Enter name"
+                    autoFocus
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label>Email Address</label>
+
+                  <input
+                    type="email"
+                    value={editingUser.email}
+                    disabled
+                  />
+
+                  <small>
+                    Email address cannot be changed here.
+                  </small>
+                </div>
+
+                <div className="form-group">
+                  <label>Account Role</label>
+
+                  <select
+                    value={editRole}
+                    onChange={(e) =>
+                      setEditRole(e.target.value)
+                    }
+                  >
+                    <option value="user">
+                      User
+                    </option>
+
+                    <option value="admin">
+                      Administrator
+                    </option>
+                  </select>
+                </div>
+
               </div>
 
-              <div className="form-group">
-                <label>Email</label>
-
-                <input
-                  type="email"
-                  value={editingUser.email}
-                  disabled
-                />
-              </div>
-
-              <div className="form-group">
-                <label>Role</label>
-
-                <select
-                  value={editRole}
-                  onChange={(e) =>
-                    setEditRole(e.target.value)
-                  }
-                >
-                  <option value="user">User</option>
-                  <option value="admin">Admin</option>
-                </select>
-              </div>
-
-              <div className="confirmation-buttons">
+              <div className="user-modal-actions">
 
                 <button
                   type="button"
-                  className="clear-btn"
+                  className="user-secondary-btn"
                   onClick={closeEditModal}
                 >
                   Cancel
@@ -382,7 +520,7 @@ function Users() {
 
                 <button
                   type="submit"
-                  className="save-btn"
+                  className="user-primary-btn"
                 >
                   Save Changes
                 </button>
@@ -392,7 +530,6 @@ function Users() {
             </form>
 
           </div>
-
         </div>
       )}
 
@@ -402,7 +539,9 @@ function Users() {
 
           <div>
             <h2>All Users</h2>
-            <p>View and manage registered users</p>
+            <p>
+              View and manage registered users
+            </p>
           </div>
 
           <span className="status-badge">
@@ -417,10 +556,9 @@ function Users() {
           </div>
         ) : users.length === 0 ? (
           <div className="no-data">
-            No users found.
+            No other users found.
           </div>
         ) : (
-
           <div className="table-container">
 
             <table>
@@ -431,34 +569,57 @@ function Users() {
                   <th>Name</th>
                   <th>Email</th>
                   <th>Role</th>
-                  <th>Created At</th>
                   <th>Action</th>
                 </tr>
               </thead>
 
               <tbody>
 
-                {users.map((user) => (
+                {users.map((user, index) => (
 
                   <tr key={user.id}>
 
-                    <td>{user.id}</td>
+                    <td>{index + 1}</td>
 
-                    <td>{user.name}</td>
+                    <td>
+                      <div className="user-name-cell">
+
+                        <div className="user-table-avatar">
+                          {(user.name || "U")
+                            .charAt(0)
+                            .toUpperCase()}
+                        </div>
+
+                        <strong>
+                          {user.name}
+                        </strong>
+
+                      </div>
+                    </td>
 
                     <td>{user.email}</td>
 
                     <td>
                       <span className="status-badge">
-                        {user.role}
+                        {user.role === "admin"
+                          ? "Administrator"
+                          : "User"}
                       </span>
                     </td>
 
-                    <td>{user.created_at}</td>
 
                     <td>
 
                       <div className="action-buttons">
+
+                        <button
+                          className="view-btn"
+                          onClick={() =>
+                            handleViewUser(user)
+                          }
+                        >
+                          View
+                        </button>
 
                         <button
                           className="edit-btn"
@@ -491,7 +652,6 @@ function Users() {
             </table>
 
           </div>
-
         )}
 
       </div>
